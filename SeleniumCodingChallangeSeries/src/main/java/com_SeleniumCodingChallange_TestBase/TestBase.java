@@ -70,9 +70,9 @@ public class TestBase
 		 {
 			System.setProperty("webdriver.chrome.driver" ,ResourceHelper.getResourcePath("\\src\\main\\resources\\chromedriver.exe"));
 			driver = new ChromeDriver();
-			System.setProperty("webdriver.chrome.logfile", "C:\\chromelogsB68\\chromedriver.log");
+			
 			System.setProperty("webdriver.chrome.verboseLogging", "true");
-			System.out.println("Webdriver Logs are created");
+			
 		 }
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

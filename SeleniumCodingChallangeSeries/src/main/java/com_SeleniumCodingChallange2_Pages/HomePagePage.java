@@ -2,6 +2,7 @@ package com_SeleniumCodingChallange2_Pages;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -13,22 +14,26 @@ import com_SeleniumCodingChallange_TestBase.TestBase;
 
 public class HomePagePage extends TestBase {
 
-	@FindBy(xpath = "//span[text()='From']//following::input[1]")
-	WebElement From;
-	@FindBy(xpath = "//span[text()='To']//following::input[1]")
-	WebElement TO;
-	@FindBy(xpath = "(//span[@class='tabsCircle appendRight5'])[2])")
-	WebElement RoundTrip;
-	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })
-	List<WebElement> PicupList;
-	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })
-	List<WebElement> DesitinationList;
+	@FindBy(xpath = "//div[@class='fsw_inner ']/div[1]")WebElement From;
+	@FindBy(xpath = "//span[text()='From']//following::input[2]")WebElement FromInput;
+	@FindBy(xpath = "//div[@class='fsw_inner ']/div[2]")WebElement TO;
+	@FindBy(xpath = "//span[text()='To']//following::input[2]")WebElement ToInput;
+	@FindBy(xpath = "//ul[@class='fswTabs latoBlack greyText']/li[2]/span")WebElement RoundTrip;
+	@FindBy(xpath="//ul[@class='makeFlex font12']/li[1]")WebElement Flights;
+	@FindBy(xpath="//div[@class='description']")WebElement popup;
+	@FindBy(xpath="//button[@id='deny']")WebElement Deny;
+	@FindBy(xpath="//div[@class='fsw_inputBox dates inactiveWidget ']")WebElement Departuredate;
+	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })List<WebElement> PicupList;
+	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })List<WebElement> DesitinationList;
+	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div/div") })List<WebElement> Departuredates;
+	
 
 	public HomePagePage() {
 		PageFactory.initElements(driver, this);
 	}
 
-	public boolean Roundtrip() {
+	public boolean Roundtrip() 
+	{
 		try {
 			TestUtil.VisibleOn(driver, RoundTrip, 30);
 		} catch (TimeoutException e) {
@@ -36,7 +41,8 @@ public class HomePagePage extends TestBase {
 		}
 
 		boolean falg = true;
-		if (RoundTrip.isSelected() == true) {
+		if (RoundTrip.isSelected() == true) 
+		{
 
 			return falg = true;
 
@@ -47,18 +53,19 @@ public class HomePagePage extends TestBase {
 
 	}
 
-	public void ClickOnRoundTrip() {
+	public void ClickOnRoundTrip() 
+	{
 		boolean flag = Roundtrip();
 		if (flag == true) {
 
 		} else {
-			TestUtil.ActionForMovetoElement(RoundTrip).click().build().perform();
+			TestUtil.ActionForMovetoElement(RoundTrip).doubleClick().click().build();
 
 		}
 
 	}
 
-	public void SelectPicupLocation() 
+	public void SelectPickupLocation() 
 	{
 		try 
 		{
@@ -68,7 +75,9 @@ public class HomePagePage extends TestBase {
 			log.info(e.getMessage());
 
 		}
-		TestUtil.ActionForMovetoElement(From).click().sendKeys("Delhi");
+		TestUtil.ActionForMovetoElement(From).click();
+		FromInput.click();
+		FromInput.sendKeys("Delhi");
 		for (int i = 0; i < PicupList.size(); i++) {
 			if (PicupList.get(i).getText().equals("Delhi, India")) 
 			{
@@ -84,18 +93,20 @@ public class HomePagePage extends TestBase {
 	{
 		try 
 		{
-			TestUtil.VisibleOn(driver, From, 30);
+			TestUtil.VisibleOn(driver, TO, 30);
 		} catch (TimeoutException e) 
 		{
 			log.info(e.getMessage());
 
 		}
-		TestUtil.ActionForMovetoElement(From).click().sendKeys("Banglore");
-		for (int j = 0; j < PicupList.size(); j++)
+		TestUtil.ActionForMovetoElement(TO).click();
+		ToInput.clear();
+		ToInput.sendKeys("Bangalore");
+		for (int j = 0; j < DesitinationList.size(); j++)
 		{
-			if (PicupList.get(j).getText().equals("Bangalore, India")) 
+			if (DesitinationList.get(j).getText().equals("Bangalore, India")) 
 			{
-				PicupList.get(j).click();
+				DesitinationList.get(j).click();
 				break;
 
 			}
@@ -103,4 +114,85 @@ public class HomePagePage extends TestBase {
 		}
 
 	}
+	
+	public boolean SelectConditionFlights() 
+	{
+		try {
+			TestUtil.VisibleOn(driver, Flights, 30);
+		}
+		catch (TimeoutException e) 
+		{
+			log.info("Flights element is not seen with in 30 sec");
+		}
+
+		boolean falg = true;
+		if (Flights.isSelected() == true) 
+		{
+
+			return falg = true;
+
+		} else {
+			falg = false;
+		}
+		return falg;
+
+	}
+	public void ClickOnFlights() 
+	{
+		boolean flag = SelectConditionFlights();
+		if (flag == true) 
+		{
+
+		} else 
+		{
+			TestUtil.ActionForMovetoElement(Flights).click().build().perform();
+
+		}
+
+	}
+	
+	public boolean Popupdisplay()
+	{
+		return false;
+		
+	}
+	
+	public void SelectDeparturedate()
+	{
+		try
+		{
+		TestUtil.VisibleOn(driver, Departuredate, 30);
+		}
+		catch(TimeoutException e)
+		{
+			log.info("Element- Departuredate is not seen with in 30 sec");
+		}
+		TestUtil.ActionForMovetoElement(Departuredate).click().build().perform();
+		String todaysdate= TestUtil.Date();
+		@SuppressWarnings("unused")
+		String[] Date= todaysdate.split(",");
+		String Day = Date[0];
+		 String Month = Date[1];
+		String Year = Date[2];
+		System.out.println();
+		for(int i=1;i<Departuredates.size();i++)
+		{
+			
+			if(Departuredates.get(i).getText().equals(Day))
+			{
+				
+				WebElement element = Departuredates.get(i);
+				if(element.isDisplayed()&&element.isEnabled()&&! element.isSelected())
+				{
+					
+					TestUtil.ActionForMovetoElement(Departuredates.get(i)).doubleClick().build().perform();
+				}
+				
+				
+				break;
+			}
+		}
+	}
+	
+	
 }
