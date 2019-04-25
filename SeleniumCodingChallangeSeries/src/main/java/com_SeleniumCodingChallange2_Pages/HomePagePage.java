@@ -25,10 +25,12 @@ public class HomePagePage extends TestBase {
 	@FindBy(xpath="//div[@class='fsw_inputBox dates inactiveWidget ']")WebElement Departuredate;
 	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })List<WebElement> PicupList;
 	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })List<WebElement> DesitinationList;
+	@FindBy(xpath="//ul[@class='react-autosuggest__suggestions-list']/li//div//p[text()='Bangalore, India']//parent::div//parent::div//parent::li")WebElement Destination;
 	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div/div") })List<WebElement> Departuredates;
 	
 
-	public HomePagePage() {
+	public HomePagePage() 
+	{
 		PageFactory.initElements(driver, this);
 	}
 
@@ -102,7 +104,8 @@ public class HomePagePage extends TestBase {
 		TestUtil.ActionForMovetoElement(TO).click();
 		ToInput.clear();
 		ToInput.sendKeys("Bangalore");
-		for (int j = 0; j < DesitinationList.size(); j++)
+		TestUtil.ActionForMovetoElement(Destination).click().build().perform();
+		/*for (int j = 0; j < DesitinationList.size(); j++)
 		{
 			if (DesitinationList.get(j).getText().equals("Bangalore, India")) 
 			{
@@ -110,10 +113,10 @@ public class HomePagePage extends TestBase {
 				break;
 
 			}
-
+*/
 		}
 
-	}
+	
 	
 	public boolean SelectConditionFlights() 
 	{

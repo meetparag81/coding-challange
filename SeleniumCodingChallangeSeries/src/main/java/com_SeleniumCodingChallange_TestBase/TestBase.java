@@ -7,6 +7,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,6 +16,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.testng.annotations.Listeners;
 
+import com_SeleniumCodingChallange_Helper.Pageloadhelper;
 import com_SeleniumCodingChallange_Helper.LoggerHelper;
 import com_SeleniumCodingChallange_Helper.ResourceHelper;
 import com_SeleniumCodingChallange_Helper.TestUtil;
@@ -24,6 +26,7 @@ public class TestBase
 	public static WebDriver driver;
 	public static Properties prop;
 	public static Logger log = LoggerHelper.getLogger(TestBase.class);
+	private static String msg;
 	
 	
 	
@@ -58,7 +61,7 @@ public class TestBase
 		
 	}
 	
-	public static void initalization()
+	public static String initalization()
 	{
 		String browsername = prop.getProperty("browser");
 		if(browsername.equals("firefox"))
@@ -78,18 +81,75 @@ public class TestBase
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		Pageloadhelper.waitForJSandJQueryToLoad();
 		try
 		{
-		driver.get(prop.getProperty("url"));
+			String URL = prop.getProperty("url");
+		driver.get(URL);
+		log.info("url is entered");
+		String title = driver.getTitle();
+		System.out.println("Title is "+"="+ title);
+		if(!title.equals("MakeMyTrip"))
+		{
+			return msg = "false";
+		}
+		else
+		{
+			return msg= "true";
+		}
 		}
 		catch(Exception e)
 		{
-			System.out.println("url is not entered");
-			
-		}
+			log.info("url is not entered");
+			return msg = "false";
 		
+		}
 	}
+
+		
+		
+		
+	
+	public  static void InatilizeBrowser()
+	{
+		String msg = initalization();
+		
+		if(msg.equals("false"))
+		 {
+			try
+			{
+				
+				driver.get(prop.getProperty("url"));
+			}
+			 catch(Exception e)
+			{
+				 try
+				 {
+					Thread.sleep(2000);
+				} 
+				 catch (InterruptedException e2)
+				 {
+					// TODO Auto-generated catch block
+					e2.printStackTrace();
+				}
+				 log.info("url is not entered");
+				 try
+				 {
+					 driver.get(prop.getProperty("url"));
+				 }
+				 catch(TimeoutException e1)
+				 {
+					 e1.getMessage();
+				 }
+				
+			}
+
+			
+
+			 
 	
 	
 
 }
+	}
+	}
