@@ -38,6 +38,7 @@ public class DepartureRoundTest extends TestBase
 		HomePage.SelectDestinationLocation();
 		log.info("Destination location added");
 		HomePage.SelectDeparturedate();
+		HomePage.SetArrivalDate();
 		log.info("Departure date added");
 		
 		

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.DateFormatSymbols;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -110,7 +111,8 @@ public class TestUtil extends TestBase
 	public static String getMonthForInt(int num) 
 	{
         String month = "wrong";
-        DateFormatSymbols dfs = new DateFormatSymbols();        String[] months = dfs.getMonths();
+        DateFormatSymbols dfs = new DateFormatSymbols();      
+        String[] months = dfs.getMonths();
         if (num >= 0 && num <= 11 ) 
         {
             month = months[num];
@@ -141,6 +143,24 @@ public class TestUtil extends TestBase
 		
 		return strDate;
 		
+	}
+	public static String Incrementeddate(int a)
+	{
+	System.out.println();
+	String month= TestUtil.getMonthForInt(4);
+	Date date = new Date(); 
+	Calendar cal1 = Calendar.getInstance();
+	cal1.setTime(date);
+	cal1.add(Calendar.DATE, a); 
+	date = cal1.getTime();
+	SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
+    formatter = new SimpleDateFormat("dd-MMM-yyyy"); 
+    String strDate = formatter.format(date);  
+	@SuppressWarnings("unused")
+	String arrdate = formatter.format(date); 
+	
+	
+	return arrdate ;
 	}
 	
 	public static void IntDate()
