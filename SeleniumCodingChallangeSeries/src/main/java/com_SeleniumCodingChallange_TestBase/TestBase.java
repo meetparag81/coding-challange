@@ -84,9 +84,9 @@ public class TestBase {
 				return msg = "true";
 			}
 		} 
-		catch (Exception e) 
+		catch (  Exception e) 
 		{
-			log.info("url is not entered");
+			log.info("url is entered but InterruptedException is seen");
 			return msg = "false";
 
 		}
@@ -96,18 +96,29 @@ public class TestBase {
 	{
 		String msg = initalization();
 
-		/*
-		 * if(msg.equals("false")) { try
-		 *  {
-		 * 
-		 * driver.get(prop.getProperty("url")); } catch(Exception e) { try {
-		 * Thread.sleep(2000); } catch (InterruptedException e2) { // TODO
-		 * Auto-generated catch block e2.printStackTrace(); }
-		 * log.info("url is not entered"); try {
-		 * driver.get(prop.getProperty("url")); } catch(TimeoutException e1) {
-		 * e1.getMessage(); }
-		 */
-
 		
+		 if(msg.equals("false")) { try
+		  {
+		  
+		  driver.get(prop.getProperty("url")); } catch(Exception e) { try 
+		  {
+		   Thread.sleep(2000); 
+		  } 
+		 catch (InterruptedException e2) 
+		  {
+			 
+		  }
+		  }
+		  log.info("url is not entered"); 
+		  try
+		  {
+		  driver.get(prop.getProperty("url")); 
+		  } 
+		  catch(TimeoutException e1) 
+		  {
+		  e1.getMessage(); 
+		  }
+	
 	}
+}
 }

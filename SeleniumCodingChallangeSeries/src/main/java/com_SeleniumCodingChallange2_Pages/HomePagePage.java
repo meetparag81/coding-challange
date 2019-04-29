@@ -14,11 +14,16 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
+import com_SeleniumCodingChallange_Helper.Exls_ReaderHelper;
+import com_SeleniumCodingChallange_Helper.ResourceHelper;
 import com_SeleniumCodingChallange_Helper.TestUtil;
 import com_SeleniumCodingChallange_TestBase.TestBase;
 
-public class HomePagePage extends TestBase {
+public class HomePagePage extends TestBase 
+{
 
+	
 	@FindBy(xpath = "//div[@class='fsw_inner ']/div[1]")WebElement From;
 	@FindBy(xpath = "//span[text()='From']//following::input[2]")WebElement FromInput;
 	@FindBy(xpath = "//div[@class='fsw_inner ']/div[2]")WebElement TO;
@@ -34,7 +39,10 @@ public class HomePagePage extends TestBase {
 	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })List<WebElement> DesitinationList;
 	@FindBy(xpath="//ul[@class='react-autosuggest__suggestions-list']/li//div//p[text()='Bangalore, India']//parent::div//parent::div//parent::li")WebElement Destination;
 	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div/div") })List<WebElement> Departuredates;
+	private int date;
+	private int todayday = 0;
 	
+	static Exls_ReaderHelper reader = new Exls_ReaderHelper(ResourceHelper.getResourcePath("\\src\\main\\java\\SeleniumCodingChallange_TestData\\SeleniumCodingChallangeSeries_2.xlsx"));
 
 	public HomePagePage() 
 	{
@@ -191,27 +199,52 @@ public class HomePagePage extends TestBase {
 		}
 		TestUtil.ActionForMovetoElement(Departuredate).click().build().perform();
 		String todaysdate= TestUtil.Date();
+		
 		@SuppressWarnings("unused")
 		String[] Date= todaysdate.split(",");
 		String Day = Date[0];
+		try
+		 {
+			 todayday= Integer.parseInt(Day);
+		 }
+		 catch(NumberFormatException e)
+		 {
+			 log.info(e.getStackTrace());
+		 }
 		 @SuppressWarnings("unused")
 		String Month = Date[1];
 		String Year = Date[2];
-		System.out.println();
+		
+		
+		 /*String Date1= reader.getCellData("HomePage", "CurrentDate", 2);
+		 String CompleteDate[] = Date1.split("/");
+		 String todaydate= CompleteDate[1];*/
+		 
+		
 		int size= Departuredates.size();
 		int count=0;
 		for(int i=1;i<size;i++)
 		{
 			count++;
 			
-			WebElement element = Departuredates.get(i);
+			/*WebElement element = Departuredates.get(i);
 			String elementname = Departuredates.get(i).getText();
 			String Dates[] = elementname.split(" "); 
 			String Dayincal = Dates[0];
-			if(count==26)
+			try
+			{
+				date= Integer.parseInt(Dayincal);
+			}
+			catch(NumberFormatException e)
+			{
+				log.info(e.getStackTrace());
+			}*/
+			
+			
+			if(date==count)
 			{
 				log.info("datetext is matched");
-				if(element.isDisplayed()&&element.isEnabled()&&!element.isSelected())
+				if(Departuredates.get(i).isDisplayed()&&Departuredates.get(i).isEnabled()&&!Departuredates.get(i).isSelected())
 				{
 				TestUtil.ActionForMovetoElement(Departuredates.get(i)).doubleClick().build().perform();
 					break;
@@ -221,6 +254,7 @@ public class HomePagePage extends TestBase {
 				
 				
 			}
+		log.info("date is not selected");
 		}
 	
 	public String[] GetArrivalDate()
