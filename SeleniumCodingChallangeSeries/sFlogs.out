@@ -593,3 +593,273 @@
 2019-04-29 21:04:91 INFO  TestBase:112 - url is not entered
 2019-04-29 21:04:849 INFO  TestBase:37 - property file initalized
 2019-04-29 21:04:893 INFO  TestBase:154 - Flights element is not seen with in 30 sec
+2019-04-30 09:04:102 INFO  TestBase:37 - property file initalized
+2019-04-30 09:04:15 INFO  TestBase:75 - url is entered
+2019-04-30 09:04:59 INFO  TestBase:37 - property file initalized
+2019-04-30 09:04:380 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 09:04:817 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 09:04:937 INFO  TestBase:253 - date is not selected
+2019-04-30 09:04:959 INFO  TestBase:37 - property file initalized
+2019-04-30 09:04:919 INFO  TestBase:75 - url is entered
+2019-04-30 09:04:395 INFO  TestBase:37 - property file initalized
+2019-04-30 09:04:692 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 09:04:117 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 09:04:359 INFO  TestBase:253 - date is not selected
+2019-04-30 09:04:537 INFO  TestBase:37 - property file initalized
+2019-04-30 09:04:546 INFO  TestBase:75 - url is entered
+2019-04-30 09:04:641 INFO  TestBase:37 - property file initalized
+2019-04-30 09:04:28 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 10:04:335 INFO  TestBase:37 - property file initalized
+2019-04-30 10:04:06 INFO  TestBase:75 - url is entered
+2019-04-30 10:04:384 INFO  TestBase:37 - property file initalized
+2019-04-30 10:04:415 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 10:04:937 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 10:04:247 INFO  TestBase:37 - property file initalized
+2019-04-30 10:04:361 INFO  TestBase:75 - url is entered
+2019-04-30 10:04:313 INFO  TestBase:37 - property file initalized
+2019-04-30 10:04:244 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 10:04:498 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 10:04:422 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@6f38a289
+2019-04-30 10:04:777 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@61e3cf4d
+2019-04-30 13:04:978 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:20 INFO  TestBase:75 - url is entered
+2019-04-30 13:04:637 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:908 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 13:04:144 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 13:04:300 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@61e3cf4d
+2019-04-30 13:04:443 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@3cec79d3
+2019-04-30 13:04:601 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@64b70919
+2019-04-30 13:04:722 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@4e31c3ec
+2019-04-30 13:04:853 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@3157e4c0
+2019-04-30 13:04:988 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@6eaa21d8
+2019-04-30 13:04:118 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@328902d5
+2019-04-30 13:04:266 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@43034809
+2019-04-30 13:04:402 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@39e67516
+2019-04-30 13:04:540 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@77010a30
+2019-04-30 13:04:676 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@6e495b48
+2019-04-30 13:04:807 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@1d61c6dc
+2019-04-30 13:04:928 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@53c68ce
+2019-04-30 13:04:74 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@11bd803
+2019-04-30 13:04:221 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@58f07f02
+2019-04-30 13:04:347 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@75798d03
+2019-04-30 13:04:479 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@40f8f5a8
+2019-04-30 13:04:600 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@1ffcf674
+2019-04-30 13:04:738 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@442f92e6
+2019-04-30 13:04:861 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@7d070ef5
+2019-04-30 13:04:980 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@7a55f148
+2019-04-30 13:04:101 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@2e2f720
+2019-04-30 13:04:223 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@3ae2ed38
+2019-04-30 13:04:346 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@7f572c37
+2019-04-30 13:04:465 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@2add4d24
+2019-04-30 13:04:587 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@3f93e4a8
+2019-04-30 13:04:709 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@12b5454f
+2019-04-30 13:04:821 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@5445f5ba
+2019-04-30 13:04:962 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@1431267b
+2019-04-30 13:04:102 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@342726f1
+2019-04-30 13:04:243 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@c808207
+2019-04-30 13:04:384 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@77134e08
+2019-04-30 13:04:540 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@6a0cbc6f
+2019-04-30 13:04:696 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@67110f71
+2019-04-30 13:04:696 INFO  TestBase:253 - date is not selected
+2019-04-30 13:04:466 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:439 INFO  TestBase:75 - url is entered
+2019-04-30 13:04:967 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:174 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 13:04:236 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:643 INFO  TestBase:75 - url is entered
+2019-04-30 13:04:95 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:539 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 13:04:163 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 13:04:358 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@64b70919
+2019-04-30 13:04:497 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@4e31c3ec
+2019-04-30 13:04:653 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@3157e4c0
+2019-04-30 13:04:821 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@6eaa21d8
+2019-04-30 13:04:977 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@328902d5
+2019-04-30 13:04:134 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@72e789cb
+2019-04-30 13:04:290 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@7c1812b3
+2019-04-30 13:04:446 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@77010a30
+2019-04-30 13:04:609 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@4bb003e9
+2019-04-30 13:04:766 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@12aa4996
+2019-04-30 13:04:922 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@53c68ce
+2019-04-30 13:04:78 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@6f9ad11c
+2019-04-30 13:04:234 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@4b2d44bc
+2019-04-30 13:04:391 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@11bd803
+2019-04-30 13:04:547 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@58f07f02
+2019-04-30 13:04:711 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@75798d03
+2019-04-30 13:04:930 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@40f8f5a8
+2019-04-30 13:04:148 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@1ffcf674
+2019-04-30 13:04:383 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@442f92e6
+2019-04-30 13:04:539 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@7d070ef5
+2019-04-30 13:04:711 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@7a55f148
+2019-04-30 13:04:873 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@2e2f720
+2019-04-30 13:04:29 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@3ae2ed38
+2019-04-30 13:04:185 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@7f572c37
+2019-04-30 13:04:341 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@2add4d24
+2019-04-30 13:04:498 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@3f93e4a8
+2019-04-30 13:04:660 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@12b5454f
+2019-04-30 13:04:816 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@5445f5ba
+2019-04-30 13:04:979 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@1431267b
+2019-04-30 13:04:136 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@342726f1
+2019-04-30 13:04:292 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@c808207
+2019-04-30 13:04:440 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@77134e08
+2019-04-30 13:04:596 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@6a0cbc6f
+2019-04-30 13:04:753 INFO  TestBase:236 - [Ljava.lang.StackTraceElement;@67110f71
+2019-04-30 13:04:753 INFO  TestBase:253 - date is not selected
+2019-04-30 13:04:30 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:891 INFO  TestBase:75 - url is entered
+2019-04-30 13:04:204 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:679 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 13:04:152 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 13:04:252 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:382 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:514 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:686 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:842 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:983 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:139 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:295 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:458 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:583 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:724 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:880 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:52 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:208 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:380 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:558 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:715 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:855 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:996 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:121 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:262 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:418 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:580 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:721 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:877 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:02 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:143 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:299 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:439 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:588 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:768 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:909 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:50 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:206 INFO  TestBase:236 - Numberformat exception seen
+2019-04-30 13:04:206 INFO  TestBase:253 - date is not selected
+2019-04-30 13:04:469 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:982 INFO  TestBase:75 - url is entered
+2019-04-30 13:04:394 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:797 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 13:04:402 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 13:04:238 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:368 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:536 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:693 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:849 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:05 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:161 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:318 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:481 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:637 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:809 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:43 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:215 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:371 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:554 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:710 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:867 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:23 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:195 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:351 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:492 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:655 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:796 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:952 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:108 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:264 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:421 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:561 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:725 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:912 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:69 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:225 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:369 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:510 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 13:04:510 INFO  HomePagePage:255 - date is not selected
+2019-04-30 13:04:425 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:433 INFO  TestBase:75 - url is entered
+2019-04-30 13:04:662 INFO  TestBase:37 - property file initalized
+2019-04-30 13:04:670 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 13:04:238 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 16:04:493 INFO  TestBase:37 - property file initalized
+2019-04-30 16:04:739 INFO  TestBase:75 - url is entered
+2019-04-30 16:04:720 INFO  TestBase:37 - property file initalized
+2019-04-30 16:04:219 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 16:04:742 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 16:04:481 INFO  HomePagePage:238 - Numberformat exception seen
+2019-04-30 17:04:225 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:878 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:177 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:150 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 17:04:702 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 17:04:250 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:371 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:612 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:175 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 17:04:705 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 17:04:757 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:319 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:600 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:163 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 17:04:59 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:501 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:959 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:393 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 17:04:914 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 17:04:623 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:954 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:63 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:312 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 17:04:254 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 17:04:642 INFO  HomePagePage:245 - datetext is matched
+2019-04-30 17:04:180 INFO  HomePagePage:256 - date is not selected
+2019-04-30 17:04:915 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:245 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:727 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:167 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 17:04:877 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 17:04:368 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:79 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:549 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:978 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 17:04:537 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 17:04:560 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:684 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:485 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:530 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 17:04:352 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 17:04:181 INFO  HomePagePage:263 - date is  selected
+2019-04-30 17:04:182 INFO  DepartureRoundTest:42 - Departure date added
+2019-04-30 17:04:553 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:247 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:776 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:727 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 17:04:356 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 17:04:471 INFO  HomePagePage:263 - date is  selected
+2019-04-30 17:04:472 INFO  DepartureRoundTest:42 - Departure date added
+2019-04-30 17:04:577 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:50 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:98 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:111 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 17:04:783 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 17:04:940 INFO  HomePagePage:263 - date is  selected
+2019-04-30 17:04:904 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:297 INFO  TestBase:75 - url is entered
+2019-04-30 17:04:711 INFO  TestBase:37 - property file initalized
+2019-04-30 17:04:346 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 18:04:51 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 18:04:911 INFO  TestBase:37 - property file initalized
+2019-04-30 18:04:466 INFO  TestBase:75 - url is entered
+2019-04-30 18:04:963 INFO  TestBase:37 - property file initalized
+2019-04-30 18:04:681 INFO  DepartureRoundTest:37 - Pickuplocation added
+2019-04-30 18:04:336 INFO  DepartureRoundTest:39 - Destination location added
+2019-04-30 18:04:552 INFO  HomePagePage:252 - datetext is matched

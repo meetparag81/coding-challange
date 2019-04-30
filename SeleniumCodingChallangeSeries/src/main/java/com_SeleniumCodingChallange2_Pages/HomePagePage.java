@@ -7,6 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
@@ -16,13 +17,14 @@ import org.openqa.selenium.support.PageFactory;
 
 
 import com_SeleniumCodingChallange_Helper.Exls_ReaderHelper;
+import com_SeleniumCodingChallange_Helper.LoggerHelper;
 import com_SeleniumCodingChallange_Helper.ResourceHelper;
 import com_SeleniumCodingChallange_Helper.TestUtil;
 import com_SeleniumCodingChallange_TestBase.TestBase;
 
 public class HomePagePage extends TestBase 
 {
-//sysout
+	public static Logger log = LoggerHelper.getLogger(HomePagePage.class);
 	
 	@FindBy(xpath = "//div[@class='fsw_inner ']/div[1]")WebElement From;
 	@FindBy(xpath = "//span[text()='From']//following::input[2]")WebElement FromInput;
@@ -33,12 +35,14 @@ public class HomePagePage extends TestBase
 	@FindBy(xpath="//div[@class='description']")WebElement popup;
 	@FindBy(xpath="//button[@id='deny']")WebElement Deny;
 	@FindBy(xpath="//div[@class='fsw_inner ']/div[3]")WebElement Departuredate;
-	@FindBy(xpath="//div[@class='fsw_inner ']/div[3]")WebElement ArrivalDate;	
+	@FindBy(xpath="//div[@class='fsw_inner ']/div[3]")WebElement ArrivalDate;
+	@FindBy(xpath="//div[@class='DayPicker-Month']//div/div")WebElement Monthele;
+	@FindBy(xpath="//div[@class='DayPicker-NavBar']/span[1]") WebElement PrevMontharrow;
 	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })List<WebElement> PicupList;
 	@FindBy (xpath="//ul[@class='react-autosuggest__suggestions-list']/li//div//p[text()='Delhi, India']//parent::div//parent::div//parent::li")WebElement Pickup;
 	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })List<WebElement> DesitinationList;
 	@FindBy(xpath="//ul[@class='react-autosuggest__suggestions-list']/li//div//p[text()='Bangalore, India']//parent::div//parent::div//parent::li")WebElement Destination;
-	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div/div") })List<WebElement> Departuredates;
+	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div/div/div/p[1]") })List<WebElement> Departuredates;
 	private int date;
 	private int todayday = 0;
 	
@@ -131,16 +135,18 @@ public class HomePagePage extends TestBase
 			e.printStackTrace();
 		}
 		TestUtil.ActionForMovetoElement(Destination).click().build().perform();
-		/*for (int j = 0; j < DesitinationList.size(); j++)
+		for (int j = 0; j < DesitinationList.size(); j++)
 		{
 			if (DesitinationList.get(j).getText().equals("Bangalore, India")) 
 			{
 				DesitinationList.get(j).click();
 				break;
-
 			}
-*/
 		}
+
+	}
+
+		
 
 	
 	
@@ -180,13 +186,9 @@ public class HomePagePage extends TestBase
 
 	}
 	
-	public boolean Popupdisplay()
-	{
-		return false;
-		
-	}
 	
-	@SuppressWarnings("unused")
+	
+	
 	public void SelectDeparturedate()
 	{
 		try
@@ -215,30 +217,34 @@ public class HomePagePage extends TestBase
 		String Month = Date[1];
 		String Year = Date[2];
 		
+		String CalenderMnth= Monthele.getText();
 		
-		 /*String Date1= reader.getCellData("HomePage", "CurrentDate", 2);
-		 String CompleteDate[] = Date1.split("/");
-		 String todaydate= CompleteDate[1];*/
-		 
+		 if(Month.equals(CalenderMnth))
+		 {
+			 
+		 }
+		 else
+		 {
+			 TestUtil.ActionForMovetoElement(PrevMontharrow).click().build().perform();
+		 }
 		
 		int size= Departuredates.size();
 		int count=0;
-		for(int i=1;i<size;i++)
+		for(int i=0;i<size;i++)
 		{
 			count++;
 			
-			/*WebElement element = Departuredates.get(i);
+			WebElement element = Departuredates.get(i);
 			String elementname = Departuredates.get(i).getText();
-			String Dates[] = elementname.split(" "); 
-			String Dayincal = Dates[0];
+			
 			try
 			{
-				date= Integer.parseInt(Dayincal);
+				date= Integer.parseInt(elementname);
 			}
 			catch(NumberFormatException e)
 			{
-				log.info(e.getStackTrace());
-			}*/
+				log.info("Numberformat exception seen");
+			}
 			
 			
 			if(date==count)
@@ -254,7 +260,7 @@ public class HomePagePage extends TestBase
 				
 				
 			}
-		log.info("date is not selected");
+		log.info("date is  selected");
 		}
 	
 	public String[] GetArrivalDate()
