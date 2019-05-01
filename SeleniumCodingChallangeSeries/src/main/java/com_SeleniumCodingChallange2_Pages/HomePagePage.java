@@ -42,9 +42,13 @@ public class HomePagePage extends TestBase
 	@FindBy (xpath="//ul[@class='react-autosuggest__suggestions-list']/li//div//p[text()='Delhi, India']//parent::div//parent::div//parent::li")WebElement Pickup;
 	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })List<WebElement> DesitinationList;
 	@FindBy(xpath="//ul[@class='react-autosuggest__suggestions-list']/li//div//p[text()='Bangalore, India']//parent::div//parent::div//parent::li")WebElement Destination;
-	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div/div/div/p[1]") })List<WebElement> Departuredates;
+	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div/div/div/p[1]") })List<WebElement> Departuredatestext;
+	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div//following::div") })List<WebElement> Departuredates;
+	@FindAll({@FindBy(xpath="(//div[@class='DayPicker-Body'])[2]/div/div/div/p[1]")})List<WebElement> ArrivalDates;
+	@FindBy(xpath="(//div[@class='DayPicker-Body'])[1]/div//following::div[@class='DayPicker-Day DayPicker-Day--today']")WebElement daytoday;
 	private int date;
-	private int todayday = 0;
+	private int todayday; 
+	private int arrday;
 	
 	static Exls_ReaderHelper reader = new Exls_ReaderHelper(ResourceHelper.getResourcePath("\\src\\main\\java\\SeleniumCodingChallange_TestData\\SeleniumCodingChallangeSeries_2.xlsx"));
 
@@ -135,7 +139,7 @@ public class HomePagePage extends TestBase
 			e.printStackTrace();
 		}
 		TestUtil.ActionForMovetoElement(Destination).click().build().perform();
-		for (int j = 0; j < DesitinationList.size(); j++)
+		for (int j = 1; j < DesitinationList.size(); j++)
 		{
 			if (DesitinationList.get(j).getText().equals("Bangalore, India")) 
 			{
@@ -218,8 +222,9 @@ public class HomePagePage extends TestBase
 		String Year = Date[2];
 		
 		String CalenderMnth= Monthele.getText();
-		
-		 if(Month.equals(CalenderMnth))
+		String[] month1= CalenderMnth.split(" ");
+		String month2 = month1[0];
+		 if(Month.equals(month2))
 		 {
 			 
 		 }
@@ -234,8 +239,12 @@ public class HomePagePage extends TestBase
 		{
 			count++;
 			
+			boolean flag;
 			WebElement element = Departuredates.get(i);
-			String elementname = Departuredates.get(i).getText();
+			flag=element.isEnabled();
+			flag=element.isDisplayed();
+			flag=element.isSelected();
+			String elementname = Departuredatestext.get(i).getText();
 			
 			try
 			{
@@ -246,10 +255,18 @@ public class HomePagePage extends TestBase
 				log.info("Numberformat exception seen");
 			}
 			
+			if(daytoday.isDisplayed()==true&& daytoday.isEnabled()==true && daytoday.isSelected()==false)
+			{
+				TestUtil.ActionForMovetoElement(daytoday).click().build().perform();
+				break;
+			}
+		}
 			
-			if(date==count)
+			/*if(date==count)
 			{
 				log.info("datetext is matched");
+				
+				
 				if(Departuredates.get(i).isDisplayed()&&Departuredates.get(i).isEnabled()&&!Departuredates.get(i).isSelected())
 				{
 				TestUtil.ActionForMovetoElement(Departuredates.get(i)).doubleClick().build().perform();
@@ -259,8 +276,8 @@ public class HomePagePage extends TestBase
 				
 				
 				
-			}
-		log.info("date is  selected");
+			}*/
+		
 		}
 	
 	public String[] GetArrivalDate()
@@ -273,11 +290,53 @@ public class HomePagePage extends TestBase
 	
 	public void SetArrivalDate()
 	{
+		try
+		{
+		TestUtil.VisibleOn(driver, ArrivalDate, 30);
+		}
+		catch(TimeoutException e)
+		{
+			log.info("Element- ArrivalDate is not seen with in 30 sec");
+		}
+		TestUtil.ActionForMovetoElement(ArrivalDate).click().build().perform();
 		String[] arrdate=GetArrivalDate();
-		String arrday = arrdate[0]; 
+		String arrday1 = arrdate[0]; 
 		String arrMonth = arrdate[1]; 
 		String arryear = arrdate[2];
+		try
+		{
+			 arrday= Integer.parseInt(arrday1);
+		}
+		catch(NumberFormatException e)
+		{
+			log.info(e.getStackTrace());
+		}
 		
+		if(arrday<24)
+		{
+			for(int j= 0;j<ArrivalDates.size();j++)
+			{
+				System.out.println();
+				if(ArrivalDates.get(j).isDisplayed()==true&&ArrivalDates.get(j).isEnabled()==true&&ArrivalDates.get(j).isSelected()==false)
+				{
+					if(arrday1.equals(ArrivalDates.get(j).getText()))
+					{
+					ArrivalDates.get(j).click();
+					break;
+					}
+				else
+				{
+					if(arrday1.equals(Departuredates.get(j).getText()))
+					{
+						Departuredates.get(j).click();
+					break;
+					}
+					
+				}
+				
+			}
+			
+		}
 		
 		
 	}
@@ -286,6 +345,7 @@ public class HomePagePage extends TestBase
 	
 	
 	}
+}
 	
 	
 

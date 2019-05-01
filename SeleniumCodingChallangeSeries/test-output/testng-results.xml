@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57879" started-at="2019-04-30T12:16:20Z" finished-at="2019-04-30T12:17:18Z">
+  <suite name="Default suite" duration-ms="132965" started-at="2019-05-01T10:20:42Z" finished-at="2019-05-01T10:22:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57879" started-at="2019-04-30T12:16:20Z" finished-at="2019-04-30T12:17:18Z">
+    <test name="Default test" duration-ms="132965" started-at="2019-05-01T10:20:42Z" finished-at="2019-05-01T10:22:55Z">
       <class name="com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest@1dde4cb2]" name="Setup" is-config="true" duration-ms="10842" started-at="2019-04-30T17:46:20Z" finished-at="2019-04-30T17:46:31Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest@b9b00e0]" name="Setup" is-config="true" duration-ms="49272" started-at="2019-05-01T10:20:42Z" finished-at="2019-05-01T10:21:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="NumberOfDepartureFlights()[pri:0, instance:com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest@1dde4cb2]" name="NumberOfDepartureFlights" duration-ms="47014" started-at="2019-04-30T17:46:31Z" finished-at="2019-04-30T17:47:18Z">
+        <test-method status="PASS" signature="NumberOfDepartureFlights()[pri:0, instance:com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest@b9b00e0]" name="NumberOfDepartureFlights" duration-ms="83655" started-at="2019-05-01T10:21:31Z" finished-at="2019-05-01T10:22:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NumberOfDepartureFlights -->

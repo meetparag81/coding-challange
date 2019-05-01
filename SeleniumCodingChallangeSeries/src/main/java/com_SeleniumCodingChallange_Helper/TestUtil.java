@@ -123,8 +123,8 @@ public class TestUtil extends TestBase
 	public static String Date()
 	{
 		Date date1 = new Date();  
-	    SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
-	    formatter = new SimpleDateFormat("dd,MM,yyyy"); 
+	    SimpleDateFormat formatter = new SimpleDateFormat("MMM/dd/yyyy");
+	    formatter = new SimpleDateFormat("dd,MMM,yyyy"); 
 	    String strDate = formatter.format(date1);  
 		strDate = formatter.format(date1); 
 		
