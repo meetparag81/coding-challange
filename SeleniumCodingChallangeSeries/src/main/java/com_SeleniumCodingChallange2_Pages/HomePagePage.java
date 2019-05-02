@@ -35,7 +35,7 @@ public class HomePagePage extends TestBase
 	@FindBy(xpath="//div[@class='description']")WebElement popup;
 	@FindBy(xpath="//button[@id='deny']")WebElement Deny;
 	@FindBy(xpath="//div[@class='fsw_inner ']/div[3]")WebElement Departuredate;
-	@FindBy(xpath="//div[@class='fsw_inner ']/div[3]")WebElement ArrivalDate;
+	@FindBy(xpath="//div[@class='fsw_inner ']/div[4]")WebElement ArrivalDate;
 	@FindBy(xpath="//div[@class='DayPicker-Month']//div/div")WebElement Monthele;
 	@FindBy(xpath="//div[@class='DayPicker-NavBar']/span[1]") WebElement PrevMontharrow;
 	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })List<WebElement> PicupList;
@@ -43,12 +43,16 @@ public class HomePagePage extends TestBase
 	@FindAll({ @FindBy(xpath = "//ul[@class='react-autosuggest__suggestions-list']/li") })List<WebElement> DesitinationList;
 	@FindBy(xpath="//ul[@class='react-autosuggest__suggestions-list']/li//div//p[text()='Bangalore, India']//parent::div//parent::div//parent::li")WebElement Destination;
 	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div/div/div/p[1]") })List<WebElement> Departuredatestext;
-	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div//following::div") })List<WebElement> Departuredates;
+	@FindAll({ @FindBy(xpath = "(//div[@class='DayPicker-Body'])[1]/div//following::div/div/p[1]") })List<WebElement> Departuredates;
 	@FindAll({@FindBy(xpath="(//div[@class='DayPicker-Body'])[2]/div/div/div/p[1]")})List<WebElement> ArrivalDates;
 	@FindBy(xpath="(//div[@class='DayPicker-Body'])[1]/div//following::div[@class='DayPicker-Day DayPicker-Day--today']")WebElement daytoday;
+	@FindAll({@FindBy(xpath="//div[@class='fli-list-body-section clearfix']")})List<WebElement> DepartureFlights;
+	@FindBy(xpath="//a[text()='Search']")WebElement Search;
 	private int date;
 	private int todayday; 
 	private int arrday;
+
+	private String msg;
 	
 	static Exls_ReaderHelper reader = new Exls_ReaderHelper(ResourceHelper.getResourcePath("\\src\\main\\java\\SeleniumCodingChallange_TestData\\SeleniumCodingChallangeSeries_2.xlsx"));
 
@@ -105,7 +109,7 @@ public class HomePagePage extends TestBase
 		TestUtil.ActionForMovetoElement(From).click().build().perform();
 		FromInput.click();
 		FromInput.sendKeys("Delhi");
-		TestUtil.ActionForMovetoElement(Pickup).click().doubleClick().build().perform();
+		TestUtil.ActionForMovetoElement(Pickup).click().click().build().perform();
 		/*for (int i = 0; i < PicupList.size(); i++) 
 		{
 			if (PicupList.get(i).getText().equals("Delhi, India")) 
@@ -314,29 +318,37 @@ public class HomePagePage extends TestBase
 		
 		if(arrday<24)
 		{
-			for(int j= 0;j<ArrivalDates.size();j++)
+			for(int j=0;j<ArrivalDates.size();j++)
 			{
-				System.out.println();
-				if(ArrivalDates.get(j).isDisplayed()==true&&ArrivalDates.get(j).isEnabled()==true&&ArrivalDates.get(j).isSelected()==false)
-				{
-					if(arrday1.equals(ArrivalDates.get(j).getText()))
+			if(Departuredates.get(j).isDisplayed()==true&& Departuredates.get(j).isEnabled()==true && Departuredates.get(j).isSelected()==false)
 					{
-					ArrivalDates.get(j).click();
-					break;
-					}
-				else
-				{
+					
+					String datetext= Departuredates.get(j).getText();
 					if(arrday1.equals(Departuredates.get(j).getText()))
 					{
-						Departuredates.get(j).click();
+					Departuredates.get(j).click();
 					break;
 					}
-					
+				
 				}
 				
 			}
 			
 		}
+		else
+		{
+			for(int j= 1;j<ArrivalDates.size();j++)
+			{
+				if(ArrivalDates.get(j).isDisplayed()==true&&ArrivalDates.get(j).isEnabled()==true&&ArrivalDates.get(j).isSelected()==false)
+					if(arrday1.equalsIgnoreCase(ArrivalDates.get(j).getText()))
+					{
+						WebElement element =ArrivalDates.get(j);
+						TestUtil.ActionForMovetoElement(element).click().build().perform();
+						break;
+					}
+				
+			}
+			
 		
 		
 	}
@@ -345,7 +357,34 @@ public class HomePagePage extends TestBase
 	
 	
 	}
-}
+
+	public String ClickOnSearch() 
+	{
+		TestUtil.ActionForMovetoElement(Search).click().build().perform();
+		
+		return msg=driver.getTitle();
+		
+	}
+
+	public int NoofDepartureFlights() 
+	{
+		try
+		{
+			TestUtil.VisibleElementsOn(driver, DepartureFlights, 30);
+		}
+		catch(TimeoutException e)
+		{
+			log.info("DepartureFlightsisnotseenwithin30secs");
+		}
+		
+		int Noofflights = DepartureFlights.size();
+		return Noofflights;
+		
+		
+	}
+ }
+
+
 	
 	
 

@@ -153,8 +153,8 @@ public class TestUtil extends TestBase
 	cal1.setTime(date);
 	cal1.add(Calendar.DATE, a); 
 	date = cal1.getTime();
-	SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
-    formatter = new SimpleDateFormat("dd-MMM-yyyy"); 
+	SimpleDateFormat formatter = new SimpleDateFormat("MMM/d/yyyy");
+    formatter = new SimpleDateFormat("d-MMM-yyyy"); 
     String strDate = formatter.format(date);  
 	@SuppressWarnings("unused")
 	String arrdate = formatter.format(date); 

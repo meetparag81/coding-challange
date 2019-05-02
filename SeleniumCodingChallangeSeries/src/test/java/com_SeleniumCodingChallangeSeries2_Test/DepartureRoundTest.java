@@ -2,6 +2,8 @@ package com_SeleniumCodingChallangeSeries2_Test;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -38,11 +40,34 @@ public class DepartureRoundTest extends TestBase
 		HomePage.SelectDestinationLocation();
 		log.info("Destination location added");
 		HomePage.SelectDeparturedate();
+		
 		HomePage.SetArrivalDate();
 		log.info("Departure date added");
+		String Act= HomePage.ClickOnSearch();
+		String Exp = "Makemytrip";
+		if(Act.equals(Exp))
+		{
+			boolean flag= true;
+		int actual= HomePage.NoofDepartureFlights();
+		int expected = 42;
+		Assert.assertEquals(actual, expected, "Departureflights are not matching");
+		}
+		else
+		{
+			boolean flag = false;
+			Assert.assertTrue(flag);
+			}
 		
 		
 		
+		
+	}
+	
+	@AfterMethod
+	public void TearDown()
+	{
+		driver.quit();
+		log.info("browser is closed");
 	}
 
 }
