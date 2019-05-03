@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54350" started-at="2019-05-02T12:22:21Z" finished-at="2019-05-02T12:23:16Z">
+  <suite name="Default suite" duration-ms="84095" started-at="2019-05-03T11:26:38Z" finished-at="2019-05-03T11:28:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54350" started-at="2019-05-02T12:22:21Z" finished-at="2019-05-02T12:23:16Z">
+    <test name="Default test" duration-ms="84095" started-at="2019-05-03T11:26:38Z" finished-at="2019-05-03T11:28:02Z">
       <class name="com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest@7714e963]" name="Setup" is-config="true" duration-ms="12529" started-at="2019-05-02T17:52:21Z" finished-at="2019-05-02T17:52:34Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest@333291e3]" name="Setup" is-config="true" duration-ms="10912" started-at="2019-05-03T16:56:38Z" finished-at="2019-05-03T16:56:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="FAIL" signature="NumberOfDepartureFlights()[pri:0, instance:com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest@7714e963]" name="NumberOfDepartureFlights" duration-ms="40904" started-at="2019-05-02T17:52:34Z" finished-at="2019-05-02T17:53:15Z">
+        <test-method status="FAIL" signature="NumberOfDepartureFlights()[pri:0, instance:com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest@333291e3]" name="NumberOfDepartureFlights" duration-ms="69377" started-at="2019-05-03T16:56:49Z" finished-at="2019-05-03T16:57:58Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NumberOfDepartureFlights -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest@7714e963]" name="TearDown" is-config="true" duration-ms="890" started-at="2019-05-02T17:53:15Z" finished-at="2019-05-02T17:53:16Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest@333291e3]" name="TearDown" is-config="true" duration-ms="3450" started-at="2019-05-03T16:57:58Z" finished-at="2019-05-03T16:58:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

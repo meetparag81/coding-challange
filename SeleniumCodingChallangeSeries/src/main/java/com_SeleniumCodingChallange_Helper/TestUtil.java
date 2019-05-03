@@ -92,22 +92,7 @@ public class TestUtil extends TestBase
 		return act1.moveToElement(element);
 	}
 	
-	public static String getScreenshot(WebDriver driver, String screenshotName) throws Exception 
-		{
-	        //below line is just to append the date format with the screenshot name to avoid duplicate names 
-		SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
-	    formatter = new SimpleDateFormat("dd,MM,yyyy"); 
-	    String dateName = new SimpleDateFormat("dd,MM,yyyy").format(new Date());
-	   //     String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-	TakesScreenshot ts = (TakesScreenshot) driver;
-	File source = ts.getScreenshotAs(OutputType.FILE);
-	        //after execution, you could see a folder "FailedTestsScreenshots" under src folder
-	String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/"+screenshotName+dateName+".png";
-	File finalDestination = new File(destination);
-	FileUtils.copyFile(source, finalDestination);
-	        //Returns the captured file path
-	return destination;
-		}
+	
 	public static String getMonthForInt(int num) 
 	{
         String month = "wrong";

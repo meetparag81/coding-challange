@@ -8,7 +8,9 @@ import java.util.Date;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.bouncycastle.crypto.KeyEncapsulation;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -47,7 +49,7 @@ public class HomePagePage extends TestBase
 	@FindAll({@FindBy(xpath="(//div[@class='DayPicker-Body'])[2]/div/div/div/p[1]")})List<WebElement> ArrivalDates;
 	@FindBy(xpath="(//div[@class='DayPicker-Body'])[1]/div//following::div[@class='DayPicker-Day DayPicker-Day--today']")WebElement daytoday;
 	@FindAll({@FindBy(xpath="//div[@class='fli-list-body-section clearfix']")})List<WebElement> DepartureFlights;
-	@FindBy(xpath="//a[text()='Search']")WebElement Search;
+	@FindBy(xpath="//main[@class='landingContainer']//preceding::a[text()='Search']")WebElement Search;
 	private int date;
 	private int todayday; 
 	private int arrday;
@@ -360,7 +362,8 @@ public class HomePagePage extends TestBase
 
 	public String ClickOnSearch() 
 	{
-		TestUtil.ActionForMovetoElement(Search).click().build().perform();
+		TestUtil.VisibleOn(driver, Search, 30);
+		Search.click();
 		
 		return msg=driver.getTitle();
 		
