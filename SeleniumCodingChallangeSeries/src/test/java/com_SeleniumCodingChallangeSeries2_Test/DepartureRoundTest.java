@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import com_SeleniumCodingChallange2_Pages.HomePagePage;
 import com_SeleniumCodingChallange_Helper.LoggerHelper;
 import com_SeleniumCodingChallange_Helper.TestUtil;
+import com_SeleniumCodingChallange_Helper.WindowHandlerHelper;
 import com_SeleniumCodingChallange_TestBase.TestBase;
 
 public class DepartureRoundTest extends TestBase 
@@ -40,9 +41,12 @@ public class DepartureRoundTest extends TestBase
 		HomePage.SelectDestinationLocation();
 		log.info("Destination location added");
 		HomePage.SelectDeparturedate();
-		
 		HomePage.SetArrivalDate();
 		log.info("Departure date added");
+		if(WindowHandlerHelper.GetNoOfWindows()>1)
+		{
+		WindowHandlerHelper.switchToParentWindow();
+		}
 		String Act= HomePage.ClickOnSearch();
 		String Exp = "Makemytrip";
 		if(Act.equals(Exp))

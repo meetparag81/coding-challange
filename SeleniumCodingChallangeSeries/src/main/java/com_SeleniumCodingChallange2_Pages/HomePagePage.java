@@ -109,18 +109,17 @@ public class HomePagePage extends TestBase
 
 		}
 		TestUtil.ActionForMovetoElement(From).click().build().perform();
-		FromInput.click();
 		FromInput.sendKeys("Delhi");
-		TestUtil.ActionForMovetoElement(Pickup).click().click().build().perform();
-		/*for (int i = 0; i < PicupList.size(); i++) 
+		for (int i = 0; i < PicupList.size(); i++) 
 		{
 			if (PicupList.get(i).getText().equals("Delhi, India")) 
 			{
 				PicupList.get(i).click();
 				break;
 
-			}*/
+			}
 		}
+	}
 
 	
 
@@ -362,8 +361,15 @@ public class HomePagePage extends TestBase
 
 	public String ClickOnSearch() 
 	{
+		try
+		{
 		TestUtil.VisibleOn(driver, Search, 30);
-		Search.click();
+		}
+		catch(TimeoutException e)
+		{
+			log.info("Element-Search is not seen with in 30 sec");
+		}
+		TestUtil.ActionForMovetoElement(Search).click().build().perform();
 		
 		return msg=driver.getTitle();
 		
