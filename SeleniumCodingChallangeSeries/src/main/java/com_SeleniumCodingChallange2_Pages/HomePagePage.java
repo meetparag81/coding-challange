@@ -50,6 +50,7 @@ public class HomePagePage extends TestBase
 	@FindBy(xpath="(//div[@class='DayPicker-Body'])[1]/div//following::div[@class='DayPicker-Day DayPicker-Day--today']")WebElement daytoday;
 	@FindAll({@FindBy(xpath="//div[@class='fli-list-body-section clearfix']")})List<WebElement> DepartureFlights;
 	@FindBy(xpath="//main[@class='landingContainer']//preceding::a[text()='Search']")WebElement Search;
+	@FindBy(xpath="//div[@class='pushRight']") WebElement pageclick;
 	private int date;
 	private int todayday; 
 	private int arrday;
@@ -97,7 +98,7 @@ public class HomePagePage extends TestBase
 
 	}
 
-	public void SelectPickupLocation() 
+	public void SelectPickupLocation() throws InterruptedException 
 	{
 		try 
 		{
@@ -110,6 +111,7 @@ public class HomePagePage extends TestBase
 		}
 		TestUtil.ActionForMovetoElement(From).click().build().perform();
 		FromInput.sendKeys("Delhi");
+		Thread.sleep(2000);
 		for (int i = 0; i < PicupList.size(); i++) 
 		{
 			if (PicupList.get(i).getText().equals("Delhi, India")) 
@@ -369,7 +371,7 @@ public class HomePagePage extends TestBase
 		{
 			log.info("Element-Search is not seen with in 30 sec");
 		}
-		TestUtil.ActionForMovetoElement(Search).click().build().perform();
+		TestUtil.ActionForMovetoElement(Search).moveByOffset(-1, 0).click().build().perform();
 		
 		return msg=driver.getTitle();
 		
