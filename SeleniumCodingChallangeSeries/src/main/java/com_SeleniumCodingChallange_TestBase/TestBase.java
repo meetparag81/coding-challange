@@ -37,7 +37,7 @@ public class TestBase
 		try {
 			prop = new Properties();
 			log.info("property file initalized");
-			ip = new FileInputStream(ResourceHelper.getResourcePath("\\src\\main\\resources\\config.properties"));
+			ip = new FileInputStream(ResourceHelper.getResourcePath("\\src\\main\\resources\\config3.properties"));
 
 			try {
 				prop.load(ip);
