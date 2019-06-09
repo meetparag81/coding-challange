@@ -8,16 +8,14 @@ import java.util.Date;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.bouncycastle.crypto.KeyEncapsulation;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest;
+
 import com_SeleniumCodingChallange_Helper.Exls_ReaderHelper;
 import com_SeleniumCodingChallange_Helper.LoggerHelper;
 import com_SeleniumCodingChallange_Helper.ResourceHelper;
@@ -49,7 +47,7 @@ public class HomePagePage extends TestBase
 	@FindAll({@FindBy(xpath="(//div[@class='DayPicker-Body'])[2]/div/div/div/p[1]")})List<WebElement> ArrivalDates;
 	@FindBy(xpath="(//div[@class='DayPicker-Body'])[1]/div//following::div[@class='DayPicker-Day DayPicker-Day--today']")WebElement daytoday;
 	@FindAll({@FindBy(xpath="//div[@class='fli-list-body-section clearfix']")})List<WebElement> DepartureFlights;
-	@FindBy(xpath="//main[@class='landingContainer']//preceding::a[text()='Search']")WebElement Search;
+	@FindBy(xpath="//a[text()='Search']")WebElement Search;
 	private int date;
 	private int todayday; 
 	private int arrday;
@@ -362,15 +360,7 @@ public class HomePagePage extends TestBase
 
 	public String ClickOnSearch() 
 	{
-		try
-		{
-		TestUtil.VisibleOn(driver, Search, 30);
-		}
-		catch(TimeoutException e)
-		{
-			log.info(e.getStackTrace());
-		}
-		TestUtil.ClickJavascriptExecutor(Search, driver);
+		TestUtil.ActionForMovetoElement(Search).click().build().perform();
 		
 		return msg=driver.getTitle();
 		

@@ -17,15 +17,13 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.testng.annotations.Listeners;
 
-import SeleniumCodingChallang_Listners.TestNG_Listners;
 import com_SeleniumCodingChallange_Helper.Pageloadhelper;
 import com_SeleniumCodingChallange_Helper.LoggerHelper;
 import com_SeleniumCodingChallange_Helper.ResourceHelper;
 import com_SeleniumCodingChallange_Helper.TestUtil;
 
-@Listeners(TestNG_Listners.class)
-public class TestBase 
-{
+@Listeners()
+public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static Logger log = LoggerHelper.getLogger(TestBase.class);
@@ -37,7 +35,7 @@ public class TestBase
 		try {
 			prop = new Properties();
 			log.info("property file initalized");
-			ip = new FileInputStream(ResourceHelper.getResourcePath("\\src\\main\\resources\\config_2.properties"));
+			ip = new FileInputStream(ResourceHelper.getResourcePath("\\src\\main\\resources\\config.properties"));
 
 			try {
 				prop.load(ip);
