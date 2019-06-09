@@ -14,7 +14,7 @@ import com_SeleniumCodingChallange_TestBase.TestBase;
 public class LoginPage_3 extends TestBase
 {
 	public static Logger log = LoggerHelper.getLogger(LoginPage_3.class);
-	public static Exls_ReaderHelper reader = new Exls_ReaderHelper(ResourceHelper.getResourcePath("\\src\\main\\java\\SeleniumCodingChallange_TestData\\SeleniumCodingChallangeSeries_2.xlsx"));
+	public static Exls_ReaderHelper reader = new Exls_ReaderHelper(ResourceHelper.getResourcePath("\\src\\main\\java\\SeleniumCodingChallange_TestData\\SeleniumCodingChallangeSeries_3.xlsx"));
 	@FindBy(xpath="//label[contains (text() , 'Password')]//preceding::input[1]" )WebElement UserName;
 	@FindBy(xpath="//label[contains (text() , 'Password')]//following::input[1]")WebElement Password;
 	@FindBy(xpath="//label[contains (text() , 'Password')]//following::input[2]")WebElement LoginButton;

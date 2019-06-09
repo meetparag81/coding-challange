@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -34,6 +35,12 @@ public class LoginPageTest_3 extends TestBase
 		String exp= "Parag B";
 		Assert.assertEquals(act, exp);
 		log.info("EnterValidUserNameTest is passesd");
+	}
+	
+	@ AfterMethod
+	public void TearDown()
+	{
+		driver.quit();
 	}
 
 }

@@ -32,6 +32,16 @@ public class HomePage_3 extends TestBase
 		{
 			log.info(e.getStackTrace());
 		}
+		boolean flag=false;
+		if(UserNameText.isDisplayed());
+		{
+			 flag = true;
+		}
+		flag= false;
+		if(flag=false)
+		{
+			return null;
+		}
 		return msg=UserNameText.getText();
 		
 	}

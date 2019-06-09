@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="64793" started-at="2019-06-09T14:30:05Z" finished-at="2019-06-09T14:31:09Z">
+  <suite name="Default suite" duration-ms="24982" started-at="2019-06-09T15:56:28Z" finished-at="2019-06-09T15:56:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="64793" started-at="2019-06-09T14:30:05Z" finished-at="2019-06-09T14:31:09Z">
+    <test name="Default test" duration-ms="24982" started-at="2019-06-09T15:56:28Z" finished-at="2019-06-09T15:56:53Z">
       <class name="com_SeleniumCodingChallangeSeries3_Test.LoginPageTest_3">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.LoginPageTest_3@679b62af]" name="SetUp" is-config="true" duration-ms="62487" started-at="2019-06-09T14:30:05Z" finished-at="2019-06-09T14:31:07Z">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.LoginPageTest_3@5cdd8682]" name="SetUp" is-config="true" duration-ms="18891" started-at="2019-06-09T15:56:28Z" finished-at="2019-06-09T15:56:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="EnterValidUserNameTest()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.LoginPageTest_3@679b62af]" name="EnterValidUserNameTest" duration-ms="2222" started-at="2019-06-09T14:31:07Z" finished-at="2019-06-09T14:31:09Z">
+        <test-method status="PASS" signature="EnterValidUserNameTest()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.LoginPageTest_3@5cdd8682]" name="EnterValidUserNameTest" duration-ms="5446" started-at="2019-06-09T15:56:47Z" finished-at="2019-06-09T15:56:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterValidUserNameTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.LoginPageTest_3@5cdd8682]" name="TearDown" is-config="true" duration-ms="625" started-at="2019-06-09T15:56:52Z" finished-at="2019-06-09T15:56:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
       </class> <!-- com_SeleniumCodingChallangeSeries3_Test.LoginPageTest_3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

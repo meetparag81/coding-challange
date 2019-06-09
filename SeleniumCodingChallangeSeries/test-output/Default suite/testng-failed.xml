@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest">
+      <class name="com_SeleniumCodingChallangeSeries3_Test.LoginPageTest_3">
         <methods>
-          <include name="NumberOfDepartureFlights"/>
+          <include name="SetUp"/>
+          <include name="EnterValidUserNameTest"/>
           <include name="TearDown"/>
-          <include name="Setup"/>
         </methods>
-      </class> <!-- com_SeleniumCodingChallangeSeries2_Test.DepartureRoundTest -->
+      </class> <!-- com_SeleniumCodingChallangeSeries3_Test.LoginPageTest_3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
