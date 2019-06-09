@@ -1751,3 +1751,15 @@
 2019-05-15 17:05:384 INFO  DepartureRoundTest:40 - Destination location added
 2019-05-15 17:05:948 INFO  DepartureRoundTest:43 - Departure date added
 >>>>>>> refs/remotes/origin/master
+2019-06-09 20:06:983 INFO  TestBase:39 - property file initalized
+2019-06-09 20:06:105 INFO  TestBase:39 - property file initalized
+2019-06-09 20:06:312 INFO  TestBase:78 - url is entered
+2019-06-09 20:06:107 INFO  TestBase:115 - url is not entered
+2019-06-09 20:06:604 INFO  TestBase:39 - property file initalized
+2019-06-09 20:06:951 INFO  TestBase:39 - property file initalized
+2019-06-09 20:06:252 INFO  TestBase:39 - property file initalized
+2019-06-09 20:06:289 INFO  TestBase:39 - property file initalized
+2019-06-09 20:06:174 INFO  TestBase:78 - url is entered
+2019-06-09 20:06:946 INFO  TestBase:115 - url is not entered
+2019-06-09 20:06:685 INFO  TestBase:39 - property file initalized
+2019-06-09 20:06:467 INFO  TestBase:39 - property file initalized
