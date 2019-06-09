@@ -1,7 +1,6 @@
 package com_SeleniumCodingChallangeSeries2_Test;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
