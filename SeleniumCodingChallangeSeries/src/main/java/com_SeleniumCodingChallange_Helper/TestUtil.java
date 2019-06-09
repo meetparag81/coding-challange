@@ -175,5 +175,12 @@ public class TestUtil extends TestBase
 		
 	}
 	
+	public static void ClickUsingJavascript(WebElement element,WebDriver driver )
+	{
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", element);
+		
+	}
+	
 
 }
