@@ -8,7 +8,9 @@ import java.util.Date;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.bouncycastle.crypto.KeyEncapsulation;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -47,7 +49,8 @@ public class HomePagePage extends TestBase
 	@FindAll({@FindBy(xpath="(//div[@class='DayPicker-Body'])[2]/div/div/div/p[1]")})List<WebElement> ArrivalDates;
 	@FindBy(xpath="(//div[@class='DayPicker-Body'])[1]/div//following::div[@class='DayPicker-Day DayPicker-Day--today']")WebElement daytoday;
 	@FindAll({@FindBy(xpath="//div[@class='fli-list-body-section clearfix']")})List<WebElement> DepartureFlights;
-	@FindBy(xpath="//a[text()='Search']")WebElement Search;
+	@FindBy(xpath="//main[@class='landingContainer']//preceding::a[text()='Search']")WebElement Search;
+	@FindBy(xpath="//div[@class='pushRight']") WebElement pageclick;
 	private int date;
 	private int todayday; 
 	private int arrday;
@@ -95,7 +98,7 @@ public class HomePagePage extends TestBase
 
 	}
 
-	public void SelectPickupLocation() 
+	public void SelectPickupLocation() throws InterruptedException 
 	{
 		try 
 		{
@@ -107,18 +110,18 @@ public class HomePagePage extends TestBase
 
 		}
 		TestUtil.ActionForMovetoElement(From).click().build().perform();
-		FromInput.click();
 		FromInput.sendKeys("Delhi");
-		TestUtil.ActionForMovetoElement(Pickup).click().click().build().perform();
-		/*for (int i = 0; i < PicupList.size(); i++) 
+		Thread.sleep(2000);
+		for (int i = 0; i < PicupList.size(); i++) 
 		{
 			if (PicupList.get(i).getText().equals("Delhi, India")) 
 			{
 				PicupList.get(i).click();
 				break;
 
-			}*/
+			}
 		}
+	}
 
 	
 
@@ -360,7 +363,15 @@ public class HomePagePage extends TestBase
 
 	public String ClickOnSearch() 
 	{
-		TestUtil.ActionForMovetoElement(Search).click().build().perform();
+		try
+		{
+		TestUtil.VisibleOn(driver, Search, 30);
+		}
+		catch(TimeoutException e)
+		{
+			log.info("Element-Search is not seen with in 30 sec");
+		}
+		TestUtil.ActionForMovetoElement(Search).moveByOffset(-1, 0).click().build().perform();
 		
 		return msg=driver.getTitle();
 		

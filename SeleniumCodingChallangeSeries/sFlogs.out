@@ -1306,8 +1306,448 @@
 2019-05-02 17:05:688 INFO  DepartureRoundTest:41 - Destination location added
 2019-05-02 17:05:44 INFO  DepartureRoundTest:45 - Departure date added
 2019-05-02 17:05:250 INFO  DepartureRoundTest:70 - browser is closed
+<<<<<<< HEAD
 2019-06-09 17:06:281 INFO  TestBase:37 - property file initalized
 2019-06-09 17:06:566 INFO  TestBase:89 - url is entered but InterruptedException is seen
 2019-06-09 17:06:578 INFO  TestBase:112 - url is not entered
 2019-06-09 17:06:533 INFO  TestBase:37 - property file initalized
 2019-06-09 17:06:603 INFO  HomePagePage:168 - Flights element is not seen with in 30 sec
+=======
+2019-05-03 09:05:151 INFO  TestBase:37 - property file initalized
+2019-05-03 09:05:204 INFO  TestBase:75 - url is entered
+2019-05-03 09:05:266 INFO  TestBase:37 - property file initalized
+2019-05-03 09:05:970 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 09:05:498 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 09:05:443 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 09:05:853 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-03 11:05:558 INFO  TestBase:39 - property file initalized
+2019-05-03 11:05:619 INFO  TestBase:39 - property file initalized
+2019-05-03 11:05:275 INFO  TestBase:39 - property file initalized
+2019-05-03 11:05:307 INFO  TestBase:39 - property file initalized
+2019-05-03 11:05:535 INFO  TestBase:77 - url is entered
+2019-05-03 11:05:750 INFO  TestBase:39 - property file initalized
+2019-05-03 11:05:540 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 11:05:297 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 11:05:843 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 11:05:452 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-03 16:05:855 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:995 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:894 INFO  TestBase:77 - url is entered
+2019-05-03 16:05:84 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:591 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 16:05:110 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 16:05:778 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 16:05:391 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-03 16:05:443 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:480 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:668 INFO  TestBase:77 - url is entered
+2019-05-03 16:05:13 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:388 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 16:05:313 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 16:05:94 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 16:05:74 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-03 16:05:899 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:936 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:709 INFO  TestBase:77 - url is entered
+2019-05-03 16:05:998 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:173 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 16:05:515 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 16:05:819 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 16:05:483 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:534 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:625 INFO  TestBase:77 - url is entered
+2019-05-03 16:05:136 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:238 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 16:05:945 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 16:05:153 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 16:05:905 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:942 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:820 INFO  TestBase:77 - url is entered
+2019-05-03 16:05:24 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:161 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 16:05:423 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 16:05:358 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 16:05:300 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:336 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:169 INFO  TestBase:77 - url is entered
+2019-05-03 16:05:308 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:598 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 16:05:500 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 16:05:322 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 16:05:264 INFO  TestNG_Listners:46 - [Ljava.lang.StackTraceElement;@58b67519
+2019-05-03 16:05:959 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-03 16:05:442 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:473 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:110 INFO  TestBase:77 - url is entered
+2019-05-03 16:05:461 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:495 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 16:05:574 INFO  HomePagePage:134 - Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='fsw_inner ']/div[2]' (tried for 30 second(s) with 500 MILLISECONDS interval)
+2019-05-03 16:05:856 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-03 16:05:333 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:403 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:09 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:44 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:428 INFO  TestBase:77 - url is entered
+2019-05-03 16:05:622 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:660 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 16:05:238 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 16:05:374 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-03 16:05:352 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:393 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:499 INFO  TestBase:77 - url is entered
+2019-05-03 16:05:782 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:769 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 16:05:486 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 16:05:480 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 16:05:855 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-03 16:05:308 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:343 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:178 INFO  TestBase:77 - url is entered
+2019-05-03 16:05:572 INFO  TestBase:39 - property file initalized
+2019-05-03 16:05:717 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 16:05:458 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 16:05:433 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 16:05:449 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-03 17:05:561 INFO  TestBase:39 - property file initalized
+2019-05-03 17:05:603 INFO  TestBase:39 - property file initalized
+2019-05-03 17:05:368 INFO  TestBase:77 - url is entered
+2019-05-03 17:05:491 INFO  TestBase:39 - property file initalized
+2019-05-03 17:05:557 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 17:05:808 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 17:05:913 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 17:05:713 INFO  TestBase:39 - property file initalized
+2019-05-03 17:05:754 INFO  TestBase:39 - property file initalized
+2019-05-03 17:05:79 INFO  TestBase:77 - url is entered
+2019-05-03 17:05:533 INFO  TestBase:39 - property file initalized
+2019-05-03 17:05:810 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 17:05:639 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 17:05:591 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-03 17:05:215 INFO  TestBase:39 - property file initalized
+2019-05-03 17:05:253 INFO  TestBase:39 - property file initalized
+2019-05-03 17:05:655 INFO  TestBase:77 - url is entered
+2019-05-03 17:05:867 INFO  TestBase:39 - property file initalized
+2019-05-03 17:05:785 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-03 17:05:390 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-03 17:05:669 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-06 10:05:714 INFO  TestBase:39 - property file initalized
+2019-05-06 10:05:760 INFO  TestBase:39 - property file initalized
+2019-05-06 10:05:312 INFO  TestBase:77 - url is entered
+2019-05-06 10:05:384 INFO  TestBase:39 - property file initalized
+2019-05-06 10:05:82 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-06 10:05:756 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-06 10:05:767 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-06 10:05:999 INFO  TestBase:39 - property file initalized
+2019-05-06 10:05:35 INFO  TestBase:39 - property file initalized
+2019-05-06 10:05:490 INFO  TestBase:77 - url is entered
+2019-05-06 10:05:752 INFO  TestBase:39 - property file initalized
+2019-05-06 10:05:259 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-06 10:05:940 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-06 10:05:755 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-06 16:05:654 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:676 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:930 INFO  TestBase:91 - url is entered but InterruptedException is seen
+2019-05-06 16:05:946 INFO  TestBase:114 - url is not entered
+2019-05-06 16:05:473 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:563 INFO  HomePagePage:170 - Flights element is not seen with in 30 sec
+2019-05-06 16:05:693 INFO  TestNG_Listners:61 - [Ljava.lang.StackTraceElement;@d56aaa6
+2019-05-06 16:05:945 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:992 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:286 INFO  TestBase:77 - url is entered
+2019-05-06 16:05:476 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:573 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-06 16:05:155 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-06 16:05:632 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-06 16:05:592 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:636 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:204 INFO  TestBase:77 - url is entered
+2019-05-06 16:05:318 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:491 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-06 16:05:809 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-06 16:05:440 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-06 16:05:923 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:977 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:198 INFO  TestBase:77 - url is entered
+2019-05-06 16:05:457 INFO  TestBase:39 - property file initalized
+2019-05-06 16:05:559 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-06 16:05:669 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-06 16:05:251 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-07 10:05:477 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:509 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:477 INFO  TestBase:77 - url is entered
+2019-05-07 10:05:819 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:347 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-07 10:05:575 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:609 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:430 INFO  TestBase:77 - url is entered
+2019-05-07 10:05:564 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:671 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-07 10:05:228 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:265 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:885 INFO  TestBase:77 - url is entered
+2019-05-07 10:05:183 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:444 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-07 10:05:943 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-07 10:05:900 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-07 10:05:517 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:555 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:175 INFO  TestBase:77 - url is entered
+2019-05-07 10:05:485 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:635 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-07 10:05:358 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-07 10:05:787 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-07 10:05:254 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:288 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:871 INFO  TestBase:77 - url is entered
+2019-05-07 10:05:420 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:335 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-07 10:05:61 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-07 10:05:628 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-07 10:05:427 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:461 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:162 INFO  TestBase:77 - url is entered
+2019-05-07 10:05:254 INFO  TestBase:39 - property file initalized
+2019-05-07 10:05:309 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-07 10:05:376 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-07 11:05:880 INFO  TestBase:39 - property file initalized
+2019-05-07 11:05:920 INFO  TestBase:39 - property file initalized
+2019-05-07 11:05:667 INFO  TestBase:77 - url is entered
+2019-05-07 11:05:126 INFO  TestBase:39 - property file initalized
+2019-05-07 11:05:269 INFO  DepartureRoundTest:39 - Pickuplocation added
+2019-05-07 11:05:131 INFO  DepartureRoundTest:41 - Destination location added
+2019-05-07 11:05:11 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-07 14:05:111 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:156 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:478 INFO  TestBase:77 - url is entered
+2019-05-07 14:05:117 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:404 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-07 14:05:415 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-07 14:05:681 INFO  DepartureRoundTest:46 - Departure date added
+2019-05-07 14:05:707 INFO  WindowHandlerHelper:25 - switching to parent window...
+2019-05-07 14:05:37 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-07 14:05:866 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:905 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:208 INFO  TestBase:77 - url is entered
+2019-05-07 14:05:384 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:504 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-07 14:05:924 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-07 14:05:718 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-07 14:05:503 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:541 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:168 INFO  TestBase:77 - url is entered
+2019-05-07 14:05:404 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:515 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-07 14:05:648 INFO  HomePagePage:134 - Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='fsw_inner ']/div[2]' (tried for 30 second(s) with 500 MILLISECONDS interval)
+2019-05-07 14:05:922 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-07 14:05:73 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:116 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:465 INFO  TestBase:77 - url is entered
+2019-05-07 14:05:948 INFO  TestBase:39 - property file initalized
+2019-05-07 14:05:219 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-07 14:05:190 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-07 14:05:241 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-07 15:05:604 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:641 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:763 INFO  TestBase:77 - url is entered
+2019-05-07 15:05:14 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:388 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-07 15:05:259 INFO  TestNG_Listners:46 - [Ljava.lang.StackTraceElement;@6c03fb16
+2019-05-07 15:05:186 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-07 15:05:426 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:474 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:74 INFO  TestBase:77 - url is entered
+2019-05-07 15:05:135 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:806 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-07 15:05:265 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-07 15:05:782 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-07 15:05:560 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:597 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:33 INFO  TestBase:77 - url is entered
+2019-05-07 15:05:203 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:899 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-07 15:05:467 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:501 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:43 INFO  TestBase:77 - url is entered
+2019-05-07 15:05:295 INFO  TestBase:39 - property file initalized
+2019-05-07 15:05:23 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-07 15:05:634 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-07 15:05:414 INFO  TestNG_Listners:46 - [Ljava.lang.StackTraceElement;@6c8909c3
+2019-05-07 15:05:196 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-09 08:05:169 INFO  TestBase:39 - property file initalized
+2019-05-09 08:05:238 INFO  TestBase:39 - property file initalized
+2019-05-09 08:05:686 INFO  TestBase:91 - url is entered but InterruptedException is seen
+2019-05-09 08:05:696 INFO  TestBase:114 - url is not entered
+2019-05-09 08:05:29 INFO  TestBase:39 - property file initalized
+2019-05-09 08:05:249 INFO  HomePagePage:171 - Flights element is not seen with in 30 sec
+2019-05-09 08:05:384 INFO  TestNG_Listners:61 - [Ljava.lang.StackTraceElement;@4eb30d44
+2019-05-09 09:05:806 INFO  TestBase:39 - property file initalized
+2019-05-09 09:05:852 INFO  TestBase:39 - property file initalized
+2019-05-09 09:05:929 INFO  TestBase:77 - url is entered
+2019-05-09 09:05:75 INFO  TestBase:39 - property file initalized
+2019-05-09 09:05:841 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-09 10:05:371 INFO  TestBase:39 - property file initalized
+2019-05-09 10:05:424 INFO  TestBase:39 - property file initalized
+2019-05-09 10:05:773 INFO  TestBase:77 - url is entered
+2019-05-09 10:05:531 INFO  TestBase:39 - property file initalized
+2019-05-09 10:05:190 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-09 10:05:926 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-09 10:05:893 INFO  DepartureRoundTest:46 - Departure date added
+2019-05-09 10:05:717 INFO  WindowHandlerHelper:25 - switching to parent window...
+2019-05-09 10:05:957 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-09 10:05:561 INFO  TestBase:39 - property file initalized
+2019-05-09 10:05:614 INFO  TestBase:39 - property file initalized
+2019-05-09 10:05:812 INFO  TestBase:77 - url is entered
+2019-05-09 10:05:577 INFO  TestBase:39 - property file initalized
+2019-05-09 10:05:152 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-09 10:05:484 INFO  DepartureRoundTest:75 - browser is closed
+2019-05-09 11:05:604 INFO  TestBase:39 - property file initalized
+2019-05-09 11:05:643 INFO  TestBase:39 - property file initalized
+2019-05-09 11:05:455 INFO  TestBase:77 - url is entered
+2019-05-09 11:05:716 INFO  TestBase:39 - property file initalized
+2019-05-09 11:05:588 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-09 11:05:262 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-09 11:05:195 INFO  DepartureRoundTest:75 - browser is closed
+2019-05-09 11:05:237 INFO  TestBase:39 - property file initalized
+2019-05-09 11:05:275 INFO  TestBase:39 - property file initalized
+2019-05-09 11:05:575 INFO  TestBase:77 - url is entered
+2019-05-09 11:05:09 INFO  TestBase:39 - property file initalized
+2019-05-09 11:05:843 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-09 11:05:274 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-09 11:05:267 INFO  TestBase:39 - property file initalized
+2019-05-09 11:05:302 INFO  TestBase:39 - property file initalized
+2019-05-09 11:05:455 INFO  TestBase:77 - url is entered
+2019-05-09 11:05:911 INFO  TestBase:39 - property file initalized
+2019-05-09 18:05:280 INFO  TestBase:39 - property file initalized
+2019-05-09 18:05:333 INFO  TestBase:39 - property file initalized
+2019-05-09 18:05:363 INFO  TestBase:77 - url is entered
+2019-05-09 18:05:968 INFO  TestBase:39 - property file initalized
+2019-05-09 18:05:314 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-09 18:05:458 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-09 18:05:851 INFO  DepartureRoundTest:74 - browser is closed
+2019-05-09 18:05:458 INFO  TestBase:39 - property file initalized
+2019-05-09 18:05:510 INFO  TestBase:39 - property file initalized
+2019-05-09 18:05:479 INFO  TestBase:77 - url is entered
+2019-05-09 18:05:213 INFO  TestBase:39 - property file initalized
+2019-05-09 18:05:633 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-09 18:05:526 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-09 18:05:446 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-09 18:05:252 INFO  DepartureRoundTest:74 - browser is closed
+2019-05-09 18:05:296 INFO  TestBase:39 - property file initalized
+2019-05-09 18:05:323 INFO  TestBase:39 - property file initalized
+2019-05-09 18:05:432 INFO  TestBase:77 - url is entered
+2019-05-09 18:05:103 INFO  TestBase:39 - property file initalized
+2019-05-09 18:05:671 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-09 18:05:249 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-15 13:05:178 INFO  TestBase:39 - property file initalized
+2019-05-15 13:05:248 INFO  TestBase:39 - property file initalized
+2019-05-15 13:05:829 INFO  TestBase:78 - url is entered
+2019-05-15 13:05:796 INFO  TestBase:39 - property file initalized
+2019-05-15 13:05:718 INFO  DepartureRoundTest:74 - browser is closed
+2019-05-15 13:05:145 INFO  TestBase:39 - property file initalized
+2019-05-15 13:05:190 INFO  TestBase:39 - property file initalized
+2019-05-15 13:05:62 INFO  TestBase:92 - url is entered but InterruptedException is seen
+2019-05-15 13:05:77 INFO  TestBase:115 - url is not entered
+2019-05-15 13:05:133 INFO  TestBase:39 - property file initalized
+2019-05-15 13:05:231 INFO  HomePagePage:169 - Flights element is not seen with in 30 sec
+2019-05-15 13:05:286 INFO  TestNG_Listners:61 - [Ljava.lang.StackTraceElement;@35088e87
+2019-05-15 13:05:790 INFO  TestBase:39 - property file initalized
+2019-05-15 13:05:831 INFO  TestBase:39 - property file initalized
+2019-05-15 13:05:108 INFO  TestBase:78 - url is entered
+2019-05-15 13:05:869 INFO  TestBase:39 - property file initalized
+2019-05-15 13:05:446 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-15 13:05:108 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-15 16:05:41 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:103 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:55 INFO  TestBase:78 - url is entered
+2019-05-15 16:05:147 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:662 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-15 16:05:204 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-15 16:05:745 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-15 16:05:374 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:411 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:23 INFO  TestBase:78 - url is entered
+2019-05-15 16:05:804 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:700 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-15 16:05:303 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-15 16:05:181 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:230 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:266 INFO  TestBase:78 - url is entered
+2019-05-15 16:05:981 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:267 INFO  DepartureRoundTest:40 - Pickuplocation added
+2019-05-15 16:05:909 INFO  DepartureRoundTest:42 - Destination location added
+2019-05-15 16:05:126 INFO  DepartureRoundTest:45 - Departure date added
+2019-05-15 16:05:616 INFO  DepartureRoundTest:70 - browser is closed
+2019-05-15 16:05:925 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:977 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:279 INFO  TestBase:78 - url is entered
+2019-05-15 16:05:385 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:764 INFO  DepartureRoundTest:41 - Pickuplocation added
+2019-05-15 16:05:404 INFO  DepartureRoundTest:43 - Destination location added
+2019-05-15 16:05:475 INFO  DepartureRoundTest:46 - Departure date added
+2019-05-15 16:05:128 INFO  DepartureRoundTest:71 - browser is closed
+2019-05-15 16:05:402 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:433 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:878 INFO  TestBase:92 - url is entered but InterruptedException is seen
+2019-05-15 16:05:499 INFO  TestBase:115 - url is not entered
+2019-05-15 16:05:398 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:618 INFO  TestNG_Listners:61 - [Ljava.lang.StackTraceElement;@2e61d218
+2019-05-15 16:05:612 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:639 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:363 INFO  TestBase:78 - url is entered
+2019-05-15 16:05:794 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:13 INFO  DepartureRoundTest:41 - Pickuplocation added
+2019-05-15 16:05:731 INFO  DepartureRoundTest:43 - Destination location added
+2019-05-15 16:05:206 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:275 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:82 INFO  TestBase:92 - url is entered but InterruptedException is seen
+2019-05-15 16:05:101 INFO  TestBase:115 - url is not entered
+2019-05-15 16:05:328 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:406 INFO  HomePagePage:170 - Flights element is not seen with in 30 sec
+2019-05-15 16:05:463 INFO  TestNG_Listners:61 - [Ljava.lang.StackTraceElement;@314ed053
+2019-05-15 16:05:668 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:717 INFO  TestBase:39 - property file initalized
+2019-05-15 16:05:829 INFO  TestBase:78 - url is entered
+2019-05-15 17:05:819 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:359 INFO  DepartureRoundTest:41 - Pickuplocation added
+2019-05-15 17:05:93 INFO  DepartureRoundTest:43 - Destination location added
+2019-05-15 17:05:408 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:447 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:942 INFO  TestBase:78 - url is entered
+2019-05-15 17:05:935 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:729 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-15 17:05:465 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:508 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:691 INFO  TestBase:78 - url is entered
+2019-05-15 17:05:685 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:27 INFO  DepartureRoundTest:72 - browser is closed
+2019-05-15 17:05:911 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:958 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:864 INFO  TestBase:78 - url is entered
+2019-05-15 17:05:580 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:540 INFO  DepartureRoundTest:41 - Pickuplocation added
+2019-05-15 17:05:41 INFO  DepartureRoundTest:43 - Destination location added
+2019-05-15 17:05:203 INFO  DepartureRoundTest:47 - Departure date added
+2019-05-15 17:05:984 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:28 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:452 INFO  TestBase:78 - url is entered
+2019-05-15 17:05:278 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:846 INFO  DepartureRoundTest:65 - browser is closed
+2019-05-15 17:05:36 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:75 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:925 INFO  TestBase:78 - url is entered
+2019-05-15 17:05:820 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:813 INFO  DepartureRoundTest:65 - browser is closed
+2019-05-15 17:05:697 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:756 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:31 INFO  TestBase:78 - url is entered
+2019-05-15 17:05:791 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:68 INFO  DepartureRoundTest:38 - Pickuplocation added
+2019-05-15 17:05:700 INFO  DepartureRoundTest:40 - Destination location added
+2019-05-15 17:05:495 INFO  DepartureRoundTest:43 - Departure date added
+2019-05-15 17:05:799 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:836 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:98 INFO  TestBase:78 - url is entered
+2019-05-15 17:05:270 INFO  TestBase:39 - property file initalized
+2019-05-15 17:05:728 INFO  DepartureRoundTest:38 - Pickuplocation added
+2019-05-15 17:05:384 INFO  DepartureRoundTest:40 - Destination location added
+2019-05-15 17:05:948 INFO  DepartureRoundTest:43 - Departure date added
+>>>>>>> refs/remotes/origin/master
