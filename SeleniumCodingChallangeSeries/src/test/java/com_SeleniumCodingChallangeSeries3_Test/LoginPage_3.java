@@ -8,7 +8,8 @@ import com_SeleniumCodingChallange_TestBase.TestBase;
 
 public class LoginPage_3 extends TestBase
 {
-	@FindBy(xpath= )WebElement UserName;
+	@FindBy(xpath="//label[contains (text() , 'Password')]//preceding::input[1]" )WebElement UserName;
+	@FindBy(xpath="//label[contains (text() , 'Password')]//following::input[1]")WebElement Password;
 	
 	LoginPage_3()
 	{
