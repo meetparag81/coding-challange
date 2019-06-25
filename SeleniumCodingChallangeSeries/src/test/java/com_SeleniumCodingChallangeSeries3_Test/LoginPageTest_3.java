@@ -14,9 +14,9 @@ import com_SeleniumCodingChallange_TestBase.TestBase;
 
 public class LoginPageTest_3 extends TestBase
 {
-	LoginPage_3 LoginPage;
-	HomePage_3 HomePage;
-	LoginPageTest_3()
+	private LoginPage_3 LoginPage;
+	private HomePage_3 HomePage;
+	public LoginPageTest_3()
 	{
 		super();
 	}

@@ -1800,3 +1800,10 @@
 2019-06-09 21:06:358 INFO  TestBase:39 - property file initalized
 2019-06-09 21:06:543 INFO  TestBase:39 - property file initalized
 2019-06-09 21:06:822 INFO  TestBase:37 - EnterValidUserNameTest is passesd
+2019-06-21 20:06:600 INFO  TestBase:39 - property file initalized
+2019-06-21 20:06:690 INFO  TestBase:39 - property file initalized
+2019-06-21 20:06:90 INFO  TestBase:78 - url is entered
+2019-06-21 20:06:708 INFO  TestBase:115 - url is not entered
+2019-06-21 20:06:978 INFO  TestBase:39 - property file initalized
+2019-06-21 20:06:338 INFO  TestBase:39 - property file initalized
+2019-06-21 20:06:545 INFO  TestBase:37 - EnterValidUserNameTest is passesd

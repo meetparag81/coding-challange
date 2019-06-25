@@ -16,6 +16,7 @@ public class HomePage_3 extends TestBase
 	public static Logger log = LoggerHelper.getLogger(HomePage_3.class);
 	private String msg;
 	@FindBy(xpath="//span[contains  (text() , 'Parag')]")WebElement UserNameText;
+	@FindBy(xpath="(//span[text()='People & Organisations']//preceding::a)[3]")WebElement Addpeople;
 
 	public HomePage_3()
 	{
@@ -43,6 +44,14 @@ public class HomePage_3 extends TestBase
 			return null;
 		}
 		return msg=UserNameText.getText();
+		
+	}
+
+	public PeopleAndOrganisationsPage ClickOnAddPeople() 
+	{
+		TestUtil.ActionForMovetoElement(Addpeople).click().build().perform();
+		return new PeopleAndOrganisationsPage();
+		
 		
 	}
 
