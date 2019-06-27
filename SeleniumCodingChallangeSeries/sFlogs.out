@@ -1807,3 +1807,43 @@
 2019-06-21 20:06:978 INFO  TestBase:39 - property file initalized
 2019-06-21 20:06:338 INFO  TestBase:39 - property file initalized
 2019-06-21 20:06:545 INFO  TestBase:37 - EnterValidUserNameTest is passesd
+2019-06-26 14:06:182 INFO  TestBase:39 - property file initalized
+2019-06-26 14:06:204 INFO  TestBase:39 - property file initalized
+2019-06-26 14:06:168 INFO  TestBase:78 - url is entered
+2019-06-26 14:06:794 INFO  TestBase:115 - url is not entered
+2019-06-26 14:06:658 INFO  TestBase:39 - property file initalized
+2019-06-26 14:06:997 INFO  TestBase:39 - property file initalized
+2019-06-26 15:06:456 INFO  TestBase:39 - property file initalized
+2019-06-26 15:06:489 INFO  TestBase:39 - property file initalized
+2019-06-26 15:06:479 INFO  TestBase:78 - url is entered
+2019-06-26 15:06:47 INFO  TestBase:115 - url is not entered
+2019-06-26 15:06:879 INFO  TestBase:39 - property file initalized
+2019-06-26 15:06:223 INFO  TestBase:39 - property file initalized
+2019-06-26 15:06:364 INFO  TestBase:39 - property file initalized
+2019-06-26 17:06:478 INFO  TestBase:40 - property file initalized
+2019-06-26 17:06:502 INFO  TestBase:40 - property file initalized
+2019-06-26 17:06:308 INFO  TestBase:79 - url is entered
+2019-06-26 17:06:822 INFO  TestBase:116 - url is not entered
+2019-06-26 17:06:30 INFO  TestBase:40 - property file initalized
+2019-06-26 17:06:146 INFO  TestBase:40 - property file initalized
+2019-06-26 17:06:279 INFO  TestBase:40 - property file initalized
+2019-06-26 17:06:622 INFO  TestBase:40 - property file initalized
+2019-06-26 17:06:645 INFO  TestBase:40 - property file initalized
+2019-06-26 17:06:339 INFO  TestBase:79 - url is entered
+2019-06-26 17:06:381 INFO  TestBase:93 - url is entered but InterruptedException is seen
+2019-06-26 17:06:392 INFO  TestBase:116 - url is not entered
+2019-06-26 17:06:446 INFO  TestNG_Listners:61 - [Ljava.lang.StackTraceElement;@45d84a20
+2019-06-27 09:06:920 INFO  TestBase:40 - property file initalized
+2019-06-27 09:06:958 INFO  TestBase:40 - property file initalized
+2019-06-27 09:06:600 INFO  TestBase:79 - url is entered
+2019-06-27 09:06:133 INFO  TestBase:116 - url is not entered
+2019-06-27 09:06:669 INFO  TestBase:40 - property file initalized
+2019-06-27 09:06:817 INFO  TestBase:40 - property file initalized
+2019-06-27 09:06:990 INFO  TestBase:40 - property file initalized
+2019-06-27 09:06:324 INFO  TestBase:40 - property file initalized
+2019-06-27 09:06:347 INFO  TestBase:40 - property file initalized
+2019-06-27 09:06:678 INFO  TestBase:79 - url is entered
+2019-06-27 09:06:224 INFO  TestBase:116 - url is not entered
+2019-06-27 09:06:553 INFO  TestBase:40 - property file initalized
+2019-06-27 09:06:822 INFO  TestBase:40 - property file initalized
+2019-06-27 09:06:984 INFO  TestBase:40 - property file initalized

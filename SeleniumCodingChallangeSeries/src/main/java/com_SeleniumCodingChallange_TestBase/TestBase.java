@@ -31,7 +31,8 @@ public class TestBase
 	public static Logger log = LoggerHelper.getLogger(TestBase.class);
 	private static String msg;
 
-	public TestBase() {
+	public TestBase() 
+	{
 		prop = new Properties();
 		FileInputStream ip;
 		try {

@@ -3,9 +3,11 @@ package com_SeleniumCodingChallange3_Pages;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.gargoylesoftware.htmlunit.TextUtil;
 
 import com_SeleniumCodingChallange_Helper.LoggerHelper;
 import com_SeleniumCodingChallange_Helper.TestUtil;
@@ -16,7 +18,8 @@ public class HomePage_3 extends TestBase
 	public static Logger log = LoggerHelper.getLogger(HomePage_3.class);
 	private String msg;
 	@FindBy(xpath="//span[contains  (text() , 'Parag')]")WebElement UserNameText;
-	@FindBy(xpath="(//span[text()='People & Organisations']//preceding::a)[3]")WebElement Addpeople;
+	@FindBy(xpath="//h3[text()='Your tasks']//preceding::a[6]")WebElement Addpeople;
+	
 
 	public HomePage_3()
 	{
@@ -54,5 +57,7 @@ public class HomePage_3 extends TestBase
 		
 		
 	}
+	
+	
 
 }
