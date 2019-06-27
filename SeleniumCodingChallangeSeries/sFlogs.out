@@ -1862,3 +1862,11 @@
 2019-06-27 14:06:745 INFO  TestBase:40 - property file initalized
 2019-06-27 14:06:946 INFO  TestBase:40 - property file initalized
 2019-06-27 14:06:562 INFO  TestBase:36 - Click on Add PeopleTest is completed
+2019-06-27 17:06:683 INFO  TestBase:40 - property file initalized
+2019-06-27 17:06:717 INFO  TestBase:40 - property file initalized
+2019-06-27 17:06:918 INFO  TestBase:79 - url is entered
+2019-06-27 17:06:529 INFO  TestBase:116 - url is not entered
+2019-06-27 17:06:90 INFO  TestBase:40 - property file initalized
+2019-06-27 17:06:933 INFO  TestBase:40 - property file initalized
+2019-06-27 17:06:356 INFO  TestBase:40 - property file initalized
+2019-06-27 17:06:190 INFO  TestBase:36 - Click on Add PeopleTest is completed

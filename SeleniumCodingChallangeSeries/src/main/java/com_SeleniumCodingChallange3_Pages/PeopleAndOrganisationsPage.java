@@ -19,6 +19,10 @@ public class PeopleAndOrganisationsPage extends TestBase {
 	private @FindBy(xpath = "(//span[text()='People & Organisations'])[2]") WebElement PeopleAndOrganisations;
 	private @FindBy(xpath = " //a[text()='Add Person']") WebElement Addperson;
 	private @FindBy(xpath="//label[contains(text(),'Title')]//following::select[1]")WebElement Titleselect;
+	private @FindBy(xpath="//label[contains(text(), 'F‌irst Na‌me')]//following::input[1]")WebElement FirstName;
+	private @FindBy(xpath="//label[contains(text(), 'F‌irst Na‌me')]//following::input[2]")WebElement LastName;
+	private @FindBy(xpath="//label[contains(text(), 'J‌ob Ti‌tle')]//following::input[1]")WebElement JobTitle;
+	private @FindBy(xpath="//label[contains(text(), 'J‌ob Ti‌tle')]//following::input[2]")WebElement Organisation;
 	private String msg;
 	static Exls_Reader reader = new Exls_Reader(ResourceHelper.getResourcePath("\\src\\main\\java\\SeleniumCodingChallange_TestData\\SeleniumCodingChallangeSeries_3.xlsx"));
 	
@@ -57,6 +61,11 @@ public class PeopleAndOrganisationsPage extends TestBase {
 		
 		}
 		options.selectByVisibleText(Title);
+		FirstName.sendKeys(F‌irstNa‌me);
+		LastName.sendKeys(L‌astNa‌me);
+		this.JobTitle.sendKeys(J‌obTi‌tle);
+		this.Organisation.sendKeys(O‌rganisation);
+		
 		
 
 	}
