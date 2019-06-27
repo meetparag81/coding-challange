@@ -1,10 +1,13 @@
 package com_SeleniumCodingChallange3_Pages;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com_SeleniumCodingChallange_Helper.Exls_ReaderHelper;
 import com_SeleniumCodingChallange_Helper.ResourceHelper;
@@ -12,73 +15,93 @@ import com_SeleniumCodingChallange_Helper.TestUtil;
 import com_SeleniumCodingChallange_TestBase.TestBase;
 import seleniumCodingChallange_ExcelUtility.Exls_Reader;
 
-public class PeopleAndOrganisationsPage extends TestBase 
-{
-	private @FindBy(xpath="(//span[text()='People & Organisations'])[2]")WebElement PeopleAndOrganisations;
-	private @FindBy(xpath=" //a[text()='Add Person']")WebElement Addperson;
+public class PeopleAndOrganisationsPage extends TestBase {
+	private @FindBy(xpath = "(//span[text()='People & Organisations'])[2]") WebElement PeopleAndOrganisations;
+	private @FindBy(xpath = " //a[text()='Add Person']") WebElement Addperson;
+	private @FindBy(xpath="//label[contains(text(),'Title')]//following::select[1]")WebElement Titleselect;
 	private String msg;
+	static Exls_Reader reader = new Exls_Reader(ResourceHelper.getResourcePath("\\src\\main\\java\\SeleniumCodingChallange_TestData\\SeleniumCodingChallangeSeries_3.xlsx"));
 	
-	 public PeopleAndOrganisationsPage()
+	
+
+	public PeopleAndOrganisationsPage()
 	{
-		PageFactory.initElements(driver, this); 
+		PageFactory.initElements(driver, this);
 	}
-	 
-	 public String PeopleAndOrganisationsPageText()
+
+	public String PeopleAndOrganisationsPageText() {
+		TestUtil.ActionForMovetoElement(PeopleAndOrganisations);
+		return msg = PeopleAndOrganisations.getText();
+
+	}
+
+	public void AddPerson() 
+	{
+		TestUtil.ActionForMovetoElement(Addperson).click().build().perform();
+	}
+	
+	
+
+	public void AddPeopleDetails(String Title, String F‌irstNa‌me, String L‌astNa‌me, String J‌obTi‌tle,
+			String O‌rganisation, String T‌ags , String Ph‌oneNu‌mbersType,
+			String Em‌ailAd‌dresses, String Em‌ailAd‌dressesType, String We‌bsites, String We‌bsitesType,
+			String Ad‌dresses, String Ad‌dressesType,String State, String Zipcode)
+	{
+		Titleselect.click();
+		WebElement titleoption = driver.findElement(By.xpath("//label[contains(text(),'Title')]//following::select[1]/option"));
+		Select options= new Select(titleoption);
+		List<WebElement> Titleoptions = options.getAllSelectedOptions();
+		int rows=2;
+		for(int i=0;i<Titleoptions.size();i++)
 		{
-			TestUtil.ActionForMovetoElement(PeopleAndOrganisations);
-			return msg=PeopleAndOrganisations.getText();
-			
+		
+		}
+		options.selectByVisibleText(Title);
+		
+
+	}
+
+	public static ArrayList<Object[]> getdatafromExcel() 
+	{
+		Exls_Reader reader = null;
+
+		ArrayList<Object[]> mydata = new ArrayList<Object[]>();
+
+		try 
+		{
+			reader = new Exls_Reader(ResourceHelper.getResourcePath(
+					"\\src\\main\\java\\SeleniumCodingChallange_TestData\\SeleniumCodingChallangeSeries_3.xlsx"));
+		} 
+		catch (Exception e)
+		{
+			e.printStackTrace();
 		}
 
-	 public void AddPerson()
-	 {
-		 TestUtil.ActionForMovetoElement(Addperson).click().build().perform();
-	 }
-	 
-	 public void AddPeopleDetails(String Title,String F‌irstNa‌me,String L‌astNa‌me,String J‌obTi‌tle,String O‌rganisation,String T‌ags,String Ph‌oneNu‌mbers,String Ph‌oneNu‌mbersType,String Em‌ailAd‌dresses,String Em‌ailAd‌dressesType,String We‌bsites,String We‌bsitesType ,String Ad‌dresses,String Ad‌dressesType,String City,String State,String Zipcode )
-	 {
-		 
-	 }
-	 
-	 
-	 public static ArrayList<Object[]> getdatafromExcel() 
+		int count1 = reader.getRowCount("PeopleAndOrganisationsPage");
+		for (int rows = 2; rows <= count1; rows++)
 		{
-		 Exls_Reader reader = null;
+			String Title = reader.getCellData("Title", 0, rows);
+			String F‌irstNa‌me = reader.getCellData("F‌irstNa‌me", 1, rows);
+			String L‌astNa‌me = reader.getCellData("L‌astNa‌me", 2, rows);
+			String O‌rganisation = reader.getCellData("O‌rganisation", 3, rows);
+			String T‌ags = reader.getCellData("T‌ags", 4, rows);
+			String Ph‌oneNu‌mbers = reader.getCellData("Ph‌oneNu‌mbers", 5, rows);
+			String Ph‌oneNu‌mbersType = reader.getCellData("Ph‌oneNu‌mbersType", 6, rows);
+			String Em‌ailAd‌dresses = reader.getCellData("Em‌ailAd‌dresses", 7, rows);
+			String We‌bsites = reader.getCellData("We‌bsites", 7, rows);
 
-			ArrayList<Object[]> mydata = new ArrayList<Object[]>();
-			try {
-				reader = new Exls_Reader(ResourceHelper.getResourcePath("\\src\\main\\java\\SeleniumCodingChallange_TestData\\SeleniumCodingChallangeSeries_3.xlsx"));
-			} catch (Exception e) 
+			Object[] obj = { Title, F‌irstNa‌me, L‌astNa‌me, O‌rganisation, T‌ags, Ph‌oneNu‌mbers, Ph‌oneNu‌mbersType,
+					Em‌ailAd‌dresses, We‌bsites };
+			mydata.add(obj);
+
+			if (rows > 2) 
 			{
-				e.printStackTrace();
+				break;
 			}
+		}
 
-			int count1 = reader.getRowCount("PeopleAndOrganisationsPage");
-			for (int rows = 2; rows <= count1; rows++) 
-			{
-				
+		return mydata;
 
-				String Title = reader.getCellData("Title", 0, rows);
-				String F‌irstNa‌me = reader.getCellData("F‌irstNa‌me", 1, rows);
-				String L‌astNa‌me = reader.getCellData("L‌astNa‌me", 2, rows);
-				String O‌rganisation = reader.getCellData("O‌rganisation", 3, rows);
-				String T‌ags = reader.getCellData("T‌ags", 4, rows);
-				String Ph‌oneNu‌mbers = reader.getCellData("Ph‌oneNu‌mbers", 5, rows);
-				String Ph‌oneNu‌mbersType = reader.getCellData("Ph‌oneNu‌mbersType", 6, rows);
-				String Em‌ailAd‌dresses= reader.getCellData("Em‌ailAd‌dresses", 7, rows);
-
-				Object[] obj = { Title, F‌irstNa‌me, L‌astNa‌me, O‌rganisation, T‌ags, Ph‌oneNu‌mbers,Ph‌oneNu‌mbersType,Em‌ailAd‌dresses };
-				mydata.add(obj);
-				
-				if(rows>2)
-				{
-					break;
-				}
-			}
-
-			return mydata;
-	
+	}
 
 }
-}
-

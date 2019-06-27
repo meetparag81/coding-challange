@@ -32,8 +32,9 @@ public class homePageTest_3 extends TestBase
 		PeopleAndOrganisationsPage=HomePage.ClickOnAddPeople();
 		String Act = PeopleAndOrganisationsPage.PeopleAndOrganisationsPageText();
 		String Exp="People & Organisations";
-		Assert.assertEquals(Act, Exp, "Text is not maching");
-
+		Assert.assertEquals(Act, Exp);
+		log.info("Click on Add PeopleTest is completed");
+		
 	}
 
 }

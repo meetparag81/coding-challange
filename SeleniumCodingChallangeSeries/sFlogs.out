@@ -1847,3 +1847,18 @@
 2019-06-27 09:06:553 INFO  TestBase:40 - property file initalized
 2019-06-27 09:06:822 INFO  TestBase:40 - property file initalized
 2019-06-27 09:06:984 INFO  TestBase:40 - property file initalized
+2019-06-27 12:06:740 INFO  TestBase:40 - property file initalized
+2019-06-27 12:06:762 INFO  TestBase:40 - property file initalized
+2019-06-27 12:06:758 INFO  TestBase:79 - url is entered
+2019-06-27 12:06:264 INFO  TestBase:116 - url is not entered
+2019-06-27 12:06:516 INFO  TestBase:40 - property file initalized
+2019-06-27 12:06:556 INFO  TestBase:40 - property file initalized
+2019-06-27 12:06:681 INFO  TestBase:40 - property file initalized
+2019-06-27 14:06:532 INFO  TestBase:40 - property file initalized
+2019-06-27 14:06:567 INFO  TestBase:40 - property file initalized
+2019-06-27 14:06:510 INFO  TestBase:79 - url is entered
+2019-06-27 14:06:163 INFO  TestBase:116 - url is not entered
+2019-06-27 14:06:182 INFO  TestBase:40 - property file initalized
+2019-06-27 14:06:745 INFO  TestBase:40 - property file initalized
+2019-06-27 14:06:946 INFO  TestBase:40 - property file initalized
+2019-06-27 14:06:562 INFO  TestBase:36 - Click on Add PeopleTest is completed
