@@ -1870,3 +1870,10 @@
 2019-06-27 17:06:933 INFO  TestBase:40 - property file initalized
 2019-06-27 17:06:356 INFO  TestBase:40 - property file initalized
 2019-06-27 17:06:190 INFO  TestBase:36 - Click on Add PeopleTest is completed
+2019-06-30 21:06:682 INFO  TestBase:40 - property file initalized
+2019-06-30 21:06:738 INFO  TestBase:40 - property file initalized
+2019-06-30 21:06:274 INFO  TestBase:79 - url is entered
+2019-06-30 21:06:484 INFO  TestBase:116 - url is not entered
+2019-06-30 21:06:842 INFO  TestBase:40 - property file initalized
+2019-06-30 21:06:110 INFO  TestBase:40 - property file initalized
+2019-06-30 21:06:361 INFO  TestBase:37 - EnterValidUserNameTest is passesd
