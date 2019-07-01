@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21120" started-at="2019-07-01T04:58:37Z" finished-at="2019-07-01T04:58:59Z">
+  <suite name="Default suite" duration-ms="21508" started-at="2019-07-01T12:20:24Z" finished-at="2019-07-01T12:20:45Z">
     <groups>
       <group name="functional">
-        <method signature="PeopleAndOrganisationsPageTest.VlueTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@28d25987]" name="VlueTest" class="com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest"/>
+        <method signature="PeopleAndOrganisationsPageTest.VlueTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@72057ecf]" name="VlueTest" class="com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest"/>
       </group> <!-- functional -->
     </groups>
-    <test name="Default test" duration-ms="21120" started-at="2019-07-01T04:58:37Z" finished-at="2019-07-01T04:58:59Z">
+    <test name="Default test" duration-ms="21508" started-at="2019-07-01T12:20:24Z" finished-at="2019-07-01T12:20:45Z">
       <class name="com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@28d25987]" name="SetUp" is-config="true" duration-ms="20541" started-at="2019-07-01T10:28:37Z" finished-at="2019-07-01T10:28:58Z">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@72057ecf]" name="SetUp" is-config="true" duration-ms="20804" started-at="2019-07-01T17:50:24Z" finished-at="2019-07-01T17:50:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="FAIL" signature="VlueTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@28d25987]" name="VlueTest" duration-ms="36" started-at="2019-07-01T10:28:58Z" data-provider="getTestData" finished-at="2019-07-01T10:28:58Z">
+        <test-method status="FAIL" signature="VlueTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@72057ecf]" name="VlueTest" duration-ms="45" started-at="2019-07-01T17:50:45Z" data-provider="getTestData" finished-at="2019-07-01T17:50:45Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-The data provider is trying to pass 9 parameters but the method com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest#VlueTest takes 15 and TestNG is unable in inject a suitable object]]>
+The data provider is trying to pass 10 parameters but the method com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest#VlueTest takes 17 and TestNG is unable in inject a suitable object]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-The data provider is trying to pass 9 parameters but the method com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest#VlueTest takes 15 and TestNG is unable in inject a suitable object
+The data provider is trying to pass 10 parameters but the method com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest#VlueTest takes 17 and TestNG is unable in inject a suitable object
 	at org.testng.internal.Invoker.injectParameters(Invoker.java:1255)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -41,7 +41,7 @@ The data provider is trying to pass 9 parameters but the method com_SeleniumCodi
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: 9
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 10
 	at org.testng.internal.Invoker.injectParameters(Invoker.java:1251)
 	... 17 more
 ]]>

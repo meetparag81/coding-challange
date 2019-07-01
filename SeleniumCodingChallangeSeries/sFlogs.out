@@ -1895,3 +1895,30 @@
 2019-07-01 10:07:409 INFO  TestBase:40 - property file initalized
 2019-07-01 10:07:107 INFO  TestBase:40 - property file initalized
 2019-07-01 10:07:471 INFO  TestBase:40 - property file initalized
+2019-07-01 12:07:458 INFO  TestBase:40 - property file initalized
+2019-07-01 12:07:480 INFO  TestBase:40 - property file initalized
+2019-07-01 12:07:21 INFO  TestBase:79 - url is entered
+2019-07-01 12:07:712 INFO  TestBase:116 - url is not entered
+2019-07-01 12:07:275 INFO  TestBase:40 - property file initalized
+2019-07-01 12:07:120 INFO  TestBase:40 - property file initalized
+2019-07-01 12:07:363 INFO  TestBase:40 - property file initalized
+2019-07-01 14:07:659 INFO  TestBase:40 - property file initalized
+2019-07-01 14:07:690 INFO  TestBase:40 - property file initalized
+2019-07-01 14:07:54 INFO  TestBase:79 - url is entered
+2019-07-01 14:07:556 INFO  TestBase:116 - url is not entered
+2019-07-01 14:07:630 INFO  TestBase:40 - property file initalized
+2019-07-01 14:07:677 INFO  TestBase:40 - property file initalized
+2019-07-01 14:07:839 INFO  TestBase:40 - property file initalized
+2019-07-01 14:07:192 INFO  TestBase:40 - property file initalized
+2019-07-01 14:07:226 INFO  TestBase:40 - property file initalized
+2019-07-01 14:07:996 INFO  TestBase:79 - url is entered
+2019-07-01 14:07:529 INFO  TestBase:116 - url is not entered
+2019-07-01 14:07:666 INFO  TestBase:40 - property file initalized
+2019-07-01 14:07:20 INFO  TestNG_Listners:61 - [Ljava.lang.StackTraceElement;@2e61d218
+2019-07-01 17:07:224 INFO  TestBase:40 - property file initalized
+2019-07-01 17:07:254 INFO  TestBase:40 - property file initalized
+2019-07-01 17:07:546 INFO  TestBase:79 - url is entered
+2019-07-01 17:07:212 INFO  TestBase:116 - url is not entered
+2019-07-01 17:07:45 INFO  TestBase:40 - property file initalized
+2019-07-01 17:07:831 INFO  TestBase:40 - property file initalized
+2019-07-01 17:07:93 INFO  TestBase:40 - property file initalized
