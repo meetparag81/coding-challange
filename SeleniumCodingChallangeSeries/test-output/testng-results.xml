@@ -1,21 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18372" started-at="2019-06-28T06:07:51Z" finished-at="2019-06-28T06:08:09Z">
+  <suite name="Default suite" duration-ms="21120" started-at="2019-07-01T04:58:37Z" finished-at="2019-07-01T04:58:59Z">
     <groups>
+      <group name="functional">
+        <method signature="PeopleAndOrganisationsPageTest.VlueTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@28d25987]" name="VlueTest" class="com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest"/>
+      </group> <!-- functional -->
     </groups>
-    <test name="Default test" duration-ms="18372" started-at="2019-06-28T06:07:51Z" finished-at="2019-06-28T06:08:09Z">
-      <class name="com_SeleniumCodingChallangeSeries3_Test.homePageTest_3">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.homePageTest_3@d8355a8]" name="SetUp" is-config="true" duration-ms="17624" started-at="2019-06-28T11:37:51Z" finished-at="2019-06-28T11:38:08Z">
+    <test name="Default test" duration-ms="21120" started-at="2019-07-01T04:58:37Z" finished-at="2019-07-01T04:58:59Z">
+      <class name="com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@28d25987]" name="SetUp" is-config="true" duration-ms="20541" started-at="2019-07-01T10:28:37Z" finished-at="2019-07-01T10:28:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="AddPeopleTest()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.homePageTest_3@d8355a8]" name="AddPeopleTest" duration-ms="729" started-at="2019-06-28T11:38:08Z" finished-at="2019-06-28T11:38:09Z">
+        <test-method status="FAIL" signature="VlueTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@28d25987]" name="VlueTest" duration-ms="36" started-at="2019-07-01T10:28:58Z" data-provider="getTestData" finished-at="2019-07-01T10:28:58Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+The data provider is trying to pass 9 parameters but the method com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest#VlueTest takes 15 and TestNG is unable in inject a suitable object]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+The data provider is trying to pass 9 parameters but the method com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest#VlueTest takes 15 and TestNG is unable in inject a suitable object
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1255)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 9
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1251)
+	... 17 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddPeopleTest -->
-      </class> <!-- com_SeleniumCodingChallangeSeries3_Test.homePageTest_3 -->
+        </test-method> <!-- VlueTest -->
+      </class> <!-- com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

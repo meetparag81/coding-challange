@@ -1862,6 +1862,7 @@
 2019-06-27 14:06:745 INFO  TestBase:40 - property file initalized
 2019-06-27 14:06:946 INFO  TestBase:40 - property file initalized
 2019-06-27 14:06:562 INFO  TestBase:36 - Click on Add PeopleTest is completed
+<<<<<<< HEAD
 2019-06-28 11:06:269 INFO  TestBase:40 - property file initalized
 2019-06-28 11:06:295 INFO  TestBase:40 - property file initalized
 2019-06-28 11:06:723 INFO  TestBase:79 - url is entered
@@ -1870,3 +1871,27 @@
 2019-06-28 11:06:947 INFO  TestBase:40 - property file initalized
 2019-06-28 11:06:181 INFO  TestBase:40 - property file initalized
 2019-06-28 11:06:678 INFO  TestBase:36 - Click on Add PeopleTest is completed
+=======
+2019-06-27 17:06:683 INFO  TestBase:40 - property file initalized
+2019-06-27 17:06:717 INFO  TestBase:40 - property file initalized
+2019-06-27 17:06:918 INFO  TestBase:79 - url is entered
+2019-06-27 17:06:529 INFO  TestBase:116 - url is not entered
+2019-06-27 17:06:90 INFO  TestBase:40 - property file initalized
+2019-06-27 17:06:933 INFO  TestBase:40 - property file initalized
+2019-06-27 17:06:356 INFO  TestBase:40 - property file initalized
+2019-06-27 17:06:190 INFO  TestBase:36 - Click on Add PeopleTest is completed
+2019-06-30 21:06:682 INFO  TestBase:40 - property file initalized
+2019-06-30 21:06:738 INFO  TestBase:40 - property file initalized
+2019-06-30 21:06:274 INFO  TestBase:79 - url is entered
+2019-06-30 21:06:484 INFO  TestBase:116 - url is not entered
+2019-06-30 21:06:842 INFO  TestBase:40 - property file initalized
+2019-06-30 21:06:110 INFO  TestBase:40 - property file initalized
+2019-06-30 21:06:361 INFO  TestBase:37 - EnterValidUserNameTest is passesd
+>>>>>>> branch 'master' of https://github.com/meetparag81/coding-challange.git
+2019-07-01 10:07:880 INFO  TestBase:40 - property file initalized
+2019-07-01 10:07:914 INFO  TestBase:40 - property file initalized
+2019-07-01 10:07:587 INFO  TestBase:79 - url is entered
+2019-07-01 10:07:306 INFO  TestBase:116 - url is not entered
+2019-07-01 10:07:409 INFO  TestBase:40 - property file initalized
+2019-07-01 10:07:107 INFO  TestBase:40 - property file initalized
+2019-07-01 10:07:471 INFO  TestBase:40 - property file initalized
