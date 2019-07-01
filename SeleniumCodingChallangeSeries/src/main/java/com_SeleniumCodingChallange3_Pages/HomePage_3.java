@@ -19,6 +19,7 @@ public class HomePage_3 extends TestBase
 	private String msg;
 	@FindBy(xpath="//span[contains  (text() , 'Parag')]")WebElement UserNameText;
 	@FindBy(xpath="//h3[text()='Your tasks']//preceding::a[6]")WebElement Addpeople;
+	@FindBy(xpath="(//span[text()='People & Organisations'])[2]//following::a[contains (text() , 'Add Person')]") WebElement AddPerson;
 	
 
 	public HomePage_3()
@@ -53,6 +54,7 @@ public class HomePage_3 extends TestBase
 	public PeopleAndOrganisationsPage ClickOnAddPeople() 
 	{
 		TestUtil.ActionForMovetoElement(Addpeople).click().build().perform();
+		AddPerson.click();
 		return new PeopleAndOrganisationsPage();
 		
 		

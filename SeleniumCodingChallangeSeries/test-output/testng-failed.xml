@@ -11,7 +11,7 @@
       <class name="com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest">
         <methods>
           <include name="SetUp"/>
-          <include name="VlueTest"/>
+          <include name="AddPeopleDetailsTest" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest -->
     </classes>

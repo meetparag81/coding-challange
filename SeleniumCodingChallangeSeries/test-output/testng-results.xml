@@ -1,30 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21508" started-at="2019-07-01T12:20:24Z" finished-at="2019-07-01T12:20:45Z">
+  <suite name="Default suite" duration-ms="19894" started-at="2019-07-01T15:45:30Z" finished-at="2019-07-01T15:45:49Z">
     <groups>
-      <group name="functional">
-        <method signature="PeopleAndOrganisationsPageTest.VlueTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@72057ecf]" name="VlueTest" class="com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest"/>
-      </group> <!-- functional -->
     </groups>
-    <test name="Default test" duration-ms="21508" started-at="2019-07-01T12:20:24Z" finished-at="2019-07-01T12:20:45Z">
+    <test name="Default test" duration-ms="19894" started-at="2019-07-01T15:45:30Z" finished-at="2019-07-01T15:45:49Z">
       <class name="com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@72057ecf]" name="SetUp" is-config="true" duration-ms="20804" started-at="2019-07-01T17:50:24Z" finished-at="2019-07-01T17:50:45Z">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@28d25987]" name="SetUp" is-config="true" duration-ms="18236" started-at="2019-07-01T21:15:30Z" finished-at="2019-07-01T21:15:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="FAIL" signature="VlueTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@72057ecf]" name="VlueTest" duration-ms="45" started-at="2019-07-01T17:50:45Z" data-provider="getTestData" finished-at="2019-07-01T17:50:45Z">
-          <exception class="org.testng.TestNGException">
+        <test-method status="FAIL" signature="AddPeopleDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@28d25987]" name="AddPeopleDetailsTest" duration-ms="814" started-at="2019-07-01T21:15:48Z" data-provider="getTestData" finished-at="2019-07-01T21:15:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ABC]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[PPP]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[LMN]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[PQR]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vendor]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9.51357028E8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[ABC@xyz.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[ABC.com]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[TWITTER]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[45-pune]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[411024.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
             <message>
-              <![CDATA[
-The data provider is trying to pass 10 parameters but the method com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest#VlueTest takes 17 and TestNG is unable in inject a suitable object]]>
+              <![CDATA[Element should have been "select" but was "option"
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'P2CLAP-G01L1VH', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-The data provider is trying to pass 10 parameters but the method com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest#VlueTest takes 17 and TestNG is unable in inject a suitable object
-	at org.testng.internal.Invoker.injectParameters(Invoker.java:1255)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "option"
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'P2CLAP-G01L1VH', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:47)
+	at com_SeleniumCodingChallange3_Pages.PeopleAndOrganisationsPage.AddPeopleDetails(PeopleAndOrganisationsPage.java:69)
+	at com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest.AddPeopleDetailsTest(PeopleAndOrganisationsPageTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
@@ -41,15 +138,145 @@ The data provider is trying to pass 10 parameters but the method com_SeleniumCod
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: 10
-	at org.testng.internal.Invoker.injectParameters(Invoker.java:1251)
-	... 17 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VlueTest -->
+        </test-method> <!-- AddPeopleDetailsTest -->
+        <test-method status="FAIL" signature="AddPeopleDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest@28d25987]" name="AddPeopleDetailsTest" duration-ms="123" started-at="2019-07-01T21:15:49Z" data-provider="getTestData" finished-at="2019-07-01T21:15:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+            <message>
+              <![CDATA[Element should have been "select" but was "option"
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'P2CLAP-G01L1VH', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "option"
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'P2CLAP-G01L1VH', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:47)
+	at com_SeleniumCodingChallange3_Pages.PeopleAndOrganisationsPage.AddPeopleDetails(PeopleAndOrganisationsPage.java:69)
+	at com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest.AddPeopleDetailsTest(PeopleAndOrganisationsPageTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddPeopleDetailsTest -->
       </class> <!-- com_SeleniumCodingChallangeSeries3_Test.PeopleAndOrganisationsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
