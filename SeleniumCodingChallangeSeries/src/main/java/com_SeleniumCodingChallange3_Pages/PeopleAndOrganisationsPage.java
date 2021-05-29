@@ -3,6 +3,7 @@ package com_SeleniumCodingChallange3_Pages;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com_SeleniumCodingChallange_Helper.Exls_ReaderHelper;
+import com_SeleniumCodingChallange_Helper.LoggerHelper;
 import com_SeleniumCodingChallange_Helper.ResourceHelper;
 import com_SeleniumCodingChallange_Helper.TestUtil;
 import com_SeleniumCodingChallange_TestBase.TestBase;
@@ -37,6 +39,7 @@ public class PeopleAndOrganisationsPage extends TestBase {
 	private @FindBy(xpath="//ul[@class='formActions']//li/input")WebElement Save;
 	private String msg;
 	static Exls_Reader reader ;
+	public static Logger log = LoggerHelper.getLogger(PeopleAndOrganisationsPage.class);
 	
 	
 
@@ -79,7 +82,7 @@ public class PeopleAndOrganisationsPage extends TestBase {
 		this.Tags.sendKeys(T‌ags);
 		Select contact = new Select(ContactNos);
 		contact.selectByVisibleText(Ph‌oneNu‌mbersType);
-		this.Emailadress.sendKeys(Em‌ailAd‌dresses);
+		Emailadress.sendKeys(Em‌ailAd‌dresses);
 		Select emailtype= new Select(Emailtype);
 		emailtype.selectByVisibleText(Em‌ailAd‌dressesType);
 		Webadress.sendKeys(We‌bsites);
@@ -89,7 +92,7 @@ public class PeopleAndOrganisationsPage extends TestBase {
 		
 		Save.click();
 		rows++;
-		if(rows<=2)
+		if(rows==2)
 		{
 			break;
 		}

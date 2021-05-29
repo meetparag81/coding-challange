@@ -3,6 +3,7 @@ package com_SeleniumCodingChallangeSeries3_Test;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -12,6 +13,7 @@ import com_SeleniumCodingChallange2_Pages.HomePagePage;
 import com_SeleniumCodingChallange3_Pages.HomePage_3;
 import com_SeleniumCodingChallange3_Pages.LoginPage_3;
 import com_SeleniumCodingChallange3_Pages.PeopleAndOrganisationsPage;
+import com_SeleniumCodingChallange_Helper.LoggerHelper;
 import com_SeleniumCodingChallange_TestBase.TestBase;
 
 
@@ -21,6 +23,7 @@ public class PeopleAndOrganisationsPageTest extends TestBase
 	private PeopleAndOrganisationsPage PAOP;
  private LoginPage_3 LoginPage;
 private HomePage_3 HomePage;
+public static Logger log = LoggerHelper.getLogger(PeopleAndOrganisationsPageTest.class);
 
 	PeopleAndOrganisationsPageTest()
 	{
